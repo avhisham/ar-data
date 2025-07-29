@@ -2,14 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Image to Coordinates XML Generator</title>
+  <title>Image to Coordinates XML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- TinyMCE editor (with your key) -->
-  <script src="https://cdn.tiny.cloud/1/anbvc4japtjkoj33ln84nol1xsy12x9tp6jx427xgqgb7tyw/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
   <script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
-
   <style>
     #thumb {
       max-height: 100px;
@@ -26,32 +22,32 @@
       border-radius: 10px;
       cursor: pointer;
     }
+    #richEditor {
+      border: 1px solid #ccc;
+      padding: 10px;
+      min-height: 150px;
+      background: white;
+    }
   </style>
 </head>
 <body class="bg-light p-4">
 
 <div class="container">
-  <h2 class="mb-4">📍 Location Metadata & XML Generator</h2>
+  <h2 class="mb-4">📍 Image to Coordinates XML Generator</h2>
 
-  <!-- Image Drop Zone -->
+  <!-- Drop zone -->
   <div id="drop-area" class="drop-zone mb-3">
     Drag & drop a JPG image here
   </div>
 
-  <!-- Full Image Preview -->
-  <div>
-    <h6>Full Image:</h6>
-    <img id="fullImage" alt="Full Image" class="img-fluid mb-3" />
-  </div>
+  <h6>Full Image:</h6>
+  <img id="fullImage" class="img-fluid mb-3" />
 
-  <!-- Thumbnail Preview -->
-  <div>
-    <h6>Thumbnail (max-height 100px):</h6>
-    <img id="thumb" alt="Thumbnail Preview" />
-    <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
-  </div>
+  <h6>Thumbnail (max-height 100px):</h6>
+  <img id="thumb" />
+  <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
 
-  <!-- Location info -->
+  <!-- Inputs -->
   <div class="row g-3 mt-4">
     <div class="col-md-6">
       <label class="form-label">📌 Location Name</label>
@@ -68,8 +64,10 @@
   </div>
 
   <div class="mt-4">
-    <label class="form-label">📝 Rich Description (HTML)</label>
-    <textarea id="richText"></textarea>
+    <label class="form-label">📝 Rich HTML Description</label>
+    <div id="richEditor" contenteditable="true">
+      <p>This is a <strong>rich</strong> HTML editor. Add <em>formatted</em> text here.</p>
+    </div>
   </div>
 
   <div class="mt-3">
@@ -82,28 +80,15 @@
     <input type="text" id="time" class="form-control">
   </div>
 
-  <!-- Social Links -->
   <div class="row g-3 mt-4" id="social-drop">
-    <div class="col-md-6">
-      <label class="form-label">🎥 YouTube</label>
-      <input type="url" id="youtube" class="form-control social">
-    </div>
-    <div class="col-md-6">
-      <label class="form-label">📸 Instagram</label>
-      <input type="url" id="instagram" class="form-control social">
-    </div>
-    <div class="col-md-6">
-      <label class="form-label">🎵 TikTok</label>
-      <input type="url" id="tiktok" class="form-control social">
-    </div>
-    <div class="col-md-6">
-      <label class="form-label">📘 Facebook</label>
-      <input type="url" id="facebook" class="form-control social">
-    </div>
+    <div class="col-md-6"><label class="form-label">🎥 YouTube</label><input type="url" id="youtube" class="form-control social"></div>
+    <div class="col-md-6"><label class="form-label">📸 Instagram</label><input type="url" id="instagram" class="form-control social"></div>
+    <div class="col-md-6"><label class="form-label">🎵 TikTok</label><input type="url" id="tiktok" class="form-control social"></div>
+    <div class="col-md-6"><label class="form-label">📘 Facebook</label><input type="url" id="facebook" class="form-control social"></div>
   </div>
 
   <div class="mt-4">
-    <label class="form-label">📄 Generated Coordinates XML</label>
+    <label class="form-label">📄 Generated XML</label>
     <pre id="output" class="bg-white border p-3 rounded"></pre>
     <button class="btn btn-outline-secondary mt-2" onclick="copyXML()">📋 Copy XML</button>
     <button class="btn btn-outline-success mt-2" onclick="saveXML()">💾 Save XML</button>
@@ -111,41 +96,25 @@
 </div>
 
 <script>
-// Initialize TinyMCE
-tinymce.init({
-  selector: '#richText',
-  height: 300,
-  plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount help charmap quickbars emoticons',
-  toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen preview save print | insertfile image media link anchor codesample | ltr rtl | code',
-  menubar: 'file edit view insert format tools table help',
-  setup: (editor) => {
-    editor.on('Change KeyUp', generateXML);
-  }
-});
-
 const dropArea = document.getElementById("drop-area");
-const thumb = document.getElementById("thumb");
 const fullImage = document.getElementById("fullImage");
+const thumb = document.getElementById("thumb");
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 
-// Image drop handler
 dropArea.addEventListener("dragover", e => e.preventDefault());
 dropArea.addEventListener("drop", async e => {
   e.preventDefault();
   const file = e.dataTransfer.files[0];
-  if (!file || !file.type.match("image/jpeg")) return alert("Only JPG allowed");
+  if (!file || !file.type.match("image/jpeg")) return alert("Only JPGs allowed.");
 
-  // Show full image
-  const fullImgUrl = URL.createObjectURL(file);
-  fullImage.src = fullImgUrl;
+  const imgURL = URL.createObjectURL(file);
+  fullImage.src = imgURL;
 
-  // Extract GPS
   const gps = await exifr.gps(file);
   document.getElementById("latitude").value = gps.latitude || "";
   document.getElementById("longitude").value = gps.longitude || "";
 
-  // Generate thumbnail
   const img = new Image();
   img.onload = () => {
     const ratio = img.width / img.height;
@@ -158,31 +127,19 @@ dropArea.addEventListener("drop", async e => {
     thumb.src = canvas.toDataURL("image/jpeg");
     generateXML();
   };
-  img.src = fullImgUrl;
+  img.src = imgURL;
 });
 
-// Drag-drop social media links
-document.getElementById("social-drop").addEventListener("drop", e => {
-  e.preventDefault();
-  const text = e.dataTransfer.getData("text/plain");
-  if (text.includes("youtube")) document.getElementById("youtube").value = text;
-  else if (text.includes("instagram")) document.getElementById("instagram").value = text;
-  else if (text.includes("tiktok")) document.getElementById("tiktok").value = text;
-  else if (text.includes("facebook")) document.getElementById("facebook").value = text;
-  generateXML();
-});
-document.getElementById("social-drop").addEventListener("dragover", e => e.preventDefault());
-
-// Watch for manual input
 ["name", "plainText", "time", "youtube", "instagram", "tiktok", "facebook"].forEach(id => {
   document.getElementById(id).addEventListener("input", generateXML);
 });
+document.getElementById("richEditor").addEventListener("input", generateXML);
 
 function generateXML() {
   const name = document.getElementById("name").value || "Unknown";
   const lat = document.getElementById("latitude").value;
   const lon = document.getElementById("longitude").value;
-  const rich = tinymce.get("richText")?.getContent() || "";
+  const rich = document.getElementById("richEditor").innerHTML;
   const plain = document.getElementById("plainText").value;
   const time = document.getElementById("time").value;
   const yt = document.getElementById("youtube").value;
@@ -206,15 +163,13 @@ function generateXML() {
     ${fb ? `<facebook>${fb}</facebook>` : ""}
   </location>
 </coordinates>`;
-
   document.getElementById("output").textContent = xml;
 }
 
 function copyXML() {
-  const xml = document.getElementById("output").textContent;
-  navigator.clipboard.writeText(xml)
+  navigator.clipboard.writeText(document.getElementById("output").textContent)
     .then(() => alert("✅ XML copied to clipboard"))
-    .catch(err => alert("❌ Copy failed: " + err));
+    .catch(err => alert("❌ Failed to copy: " + err));
 }
 
 function saveXML() {
