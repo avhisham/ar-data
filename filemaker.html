@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Drop to Coordinates XML</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #drop-area {
+      border: 2px dashed #999;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    #thumb {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-top: 10px;
+    }
+    textarea, input, #output {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Drop JPG Image Below</h2>
+<div id="drop-area">Drag & Drop JPG Here</div>
+<canvas id="canvas" width="200" height="200" style="display:none;"></canvas>
+<img id="thumb" alt="Thumbnail Preview"/>
+
+<h3>Location Name</h3>
+<input type="text" id="name" placeholder="e.g., Garden" />
+
+<h3>Rich Text Description (HTML)</h3>
+<textarea id="richText" rows="5"><p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p></textarea>
+
+<h3>Plain Text</h3>
+<textarea id="plainText" rows="2"></textarea>
+
+<h3>Time</h3>
+<input type="text" id="time" placeholder="e.g., 1640-01-01 or 1052H" />
+
+<h3>Social Links (optional)</h3>
+<input type="url" id="youtube" placeholder="YouTube link" />
+<input type="url" id="instagram" placeholder="Instagram link" />
+<input type="url" id="tiktok" placeholder="TikTok link" />
+<input type="url" id="facebook" placeholder="Facebook link" />
+
+<h3>Generated XML</h3>
+<pre id="output">&lt;coordinates&gt;
+  ...
+&lt;/coordinates&gt;</pre>
+
+<script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
+<script>
+const dropArea = document.getElementById("drop-area");
+const thumb = document.getElementById("thumb");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let lat = "", lon = "", thumbnailBase64 = "";
+
+dropArea.addEventListener("dragover", e => {
+  e.preventDefault();
+  dropArea.style.borderColor = "#333";
+});
+
+dropArea.addEventListener("dragleave", e => {
+  dropArea.style.borderColor = "#999";
+});
+
+dropArea.addEventListener("drop", async e => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (!file || !file.type.match("image/jpeg")) {
+    alert("Only JPG images are supported.");
+    return;
+  }
+
+  // Extract GPS with exifr
+  const data = await exifr.gps(file);
+  lat = data.latitude || "";
+  lon = data.longitude || "";
+
+  // Create thumbnail
+  const img = new Image();
+  img.onload = () => {
+    ctx.clearRect(0, 0, 200, 200);
+    ctx.drawImage(img, 0, 0, 200, 200);
+    thumb.src = canvas.toDataURL("image/jpeg");
+    thumbnailBase64 = thumb.src;
+    generateXML();
+  };
+  img.src = URL.createObjectURL(file);
+});
+
+// Watch inputs
+["name", "richText", "plainText", "time", "youtube", "instagram", "tiktok", "facebook"].forEach(id => {
+  document.getElementById(id).addEventListener("input", generateXML);
+});
+
+function generateXML() {
+  const name = document.getElementById("name").value || "Unknown";
+  const rich = document.getElementById("richText").value;
+  const plain = document.getElementById("plainText").value;
+  const time = document.getElementById("time").value;
+  const yt = document.getElementById("youtube").value;
+  const ig = document.getElementById("instagram").value;
+  const tt = document.getElementById("tiktok").value;
+  const fb = document.getElementById("facebook").value;
+
+  const xml = `&lt;coordinates&gt;
+    &lt;location&gt;
+        &lt;name&gt;${name}&lt;/name&gt;
+        &lt;latitude&gt;${lat}&lt;/latitude&gt;
+        &lt;longitude&gt;${lon}&lt;/longitude&gt;
+        &lt;explanation&gt;&lt;![CDATA[
+            ${rich}
+        ]]&gt;&lt;/explanation&gt;
+        ${plain ? `&lt;description&gt;${plain}&lt;/description&gt;` : ""}
+        &lt;time&gt;${time}&lt;/time&gt;
+        ${yt ? `&lt;youtube&gt;${yt}&lt;/youtube&gt;` : ""}
+        ${ig ? `&lt;instagram&gt;${ig}&lt;/instagram&gt;` : ""}
+        ${tt ? `&lt;tiktok&gt;${tt}&lt;/tiktok&gt;` : ""}
+        ${fb ? `&lt;facebook&gt;${fb}&lt;/facebook&gt;` : ""}
+    &lt;/location&gt;
+&lt;/coordinates&gt;`;
+
+  document.getElementById("output").textContent = xml;
+}
+</script>
+
+</body>
+</html>
