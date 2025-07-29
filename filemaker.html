@@ -45,8 +45,14 @@
 
   <h6>Thumbnail (max-height 100px):</h6>
   <img id="thumb" />
-  <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
 
+  <div class="mt-2">
+    <label class="form-label">📁 File name (no extension):</label>
+    <input type="text" id="thumbnailName" class="form-control" placeholder="e.g., maqam_abu_hanifa">
+    <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
+  </div>
+
+  <!-- Location details -->
   <div class="row g-3 mt-4">
     <div class="col-md-6">
       <label class="form-label">📌 Location Name</label>
@@ -62,6 +68,7 @@
     </div>
   </div>
 
+  <!-- HTML description -->
   <div class="mt-4">
     <label class="form-label">📝 Rich HTML Description</label>
     <div id="richEditor" contenteditable="true" class="form-control">
@@ -79,13 +86,15 @@
     <input type="text" id="time" class="form-control">
   </div>
 
-  <div class="row g-3 mt-4" id="social-drop">
+  <!-- Social media -->
+  <div class="row g-3 mt-4">
     <div class="col-md-6"><label class="form-label">🎥 YouTube</label><input type="url" id="youtube" class="form-control social"></div>
     <div class="col-md-6"><label class="form-label">📸 Instagram</label><input type="url" id="instagram" class="form-control social"></div>
     <div class="col-md-6"><label class="form-label">🎵 TikTok</label><input type="url" id="tiktok" class="form-control social"></div>
     <div class="col-md-6"><label class="form-label">📘 Facebook</label><input type="url" id="facebook" class="form-control social"></div>
   </div>
 
+  <!-- XML output -->
   <div class="mt-4">
     <label class="form-label">📄 Generated XML</label>
     <pre id="output" class="bg-white border p-3 rounded"></pre>
@@ -105,7 +114,7 @@ dropArea.addEventListener("dragover", e => e.preventDefault());
 dropArea.addEventListener("drop", async e => {
   e.preventDefault();
   const file = e.dataTransfer.files[0];
-  if (!file || !file.type.match("image/jpeg")) return alert("Only JPGs allowed.");
+  if (!file || !file.type.match("image/jpeg")) return alert("Only JPG images allowed.");
 
   const imgURL = URL.createObjectURL(file);
   fullImage.src = imgURL;
@@ -186,9 +195,15 @@ function saveThumbnail() {
     alert("❌ No thumbnail to save.");
     return;
   }
+
+  const nameInput = document.getElementById("thumbnailName").value.trim();
+  const filename = nameInput ? nameInput + ".jpg" : "thumbnail.jpg";
+
   const link = document.createElement("a");
   link.href = thumb.src;
-  link.download = "thumbnail.jpg";
+  link.download = filename;
+
+  // User selects location (e.g., D:\mygithub\ar-data\images\)
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
