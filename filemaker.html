@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Image Drop to Coordinates XML</title>
+  <title>Image to Coordinates XML</title>
   <style>
     body { font-family: sans-serif; margin: 20px; }
     #drop-area {
@@ -24,45 +24,52 @@
       width: 100%;
       margin-top: 10px;
     }
+    pre {
+      background: #f0f0f0;
+      padding: 15px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
 
-<h2>Drop JPG Image Below</h2>
+<h2>📷 Drop JPG Image</h2>
 <div id="drop-area">Drag & Drop JPG Here</div>
 <canvas id="canvas" width="200" height="200" style="display:none;"></canvas>
 <img id="thumb" alt="Thumbnail Preview"/>
 
-<h3>Location Name</h3>
-<input type="text" id="name" placeholder="e.g., Garden" />
+<h3>📌 Location Name</h3>
+<input type="text" id="name" placeholder="e.g., Maqam Imam Abu Hanifa" />
 
-<h3>Rich Text Description (HTML)</h3>
+<h3>📝 Rich Text Description (HTML)</h3>
 <textarea id="richText" rows="5"><p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p></textarea>
 
-<h3>Plain Text</h3>
+<h3>🧾 Plain Text Summary (optional)</h3>
 <textarea id="plainText" rows="2"></textarea>
 
-<h3>Time</h3>
+<h3>📅 Time (Hijri or Gregorian)</h3>
 <input type="text" id="time" placeholder="e.g., 1640-01-01 or 1052H" />
 
-<h3>Social Links (optional)</h3>
+<h3>🔗 Social Media Links (optional)</h3>
 <input type="url" id="youtube" placeholder="YouTube link" />
 <input type="url" id="instagram" placeholder="Instagram link" />
 <input type="url" id="tiktok" placeholder="TikTok link" />
 <input type="url" id="facebook" placeholder="Facebook link" />
 
-<h3>Generated XML</h3>
+<h3>📄 Generated Coordinates XML</h3>
 <pre id="output">&lt;coordinates&gt;
   ...
 &lt;/coordinates&gt;</pre>
 
+<!-- JS libraries -->
 <script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
 <script>
 const dropArea = document.getElementById("drop-area");
 const thumb = document.getElementById("thumb");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-let lat = "", lon = "", thumbnailBase64 = "";
+let lat = "", lon = "";
 
 dropArea.addEventListener("dragover", e => {
   e.preventDefault();
@@ -81,7 +88,7 @@ dropArea.addEventListener("drop", async e => {
     return;
   }
 
-  // Extract GPS with exifr
+  // Extract GPS
   const data = await exifr.gps(file);
   lat = data.latitude || "";
   lon = data.longitude || "";
@@ -92,14 +99,14 @@ dropArea.addEventListener("drop", async e => {
     ctx.clearRect(0, 0, 200, 200);
     ctx.drawImage(img, 0, 0, 200, 200);
     thumb.src = canvas.toDataURL("image/jpeg");
-    thumbnailBase64 = thumb.src;
     generateXML();
   };
   img.src = URL.createObjectURL(file);
 });
 
-// Watch inputs
-["name", "richText", "plainText", "time", "youtube", "instagram", "tiktok", "facebook"].forEach(id => {
+// Trigger XML generation on input changes
+["name", "richText", "plainText", "time", "youtube", "instagram", "tiktok", "facebook"]
+.forEach(id => {
   document.getElementById(id).addEventListener("input", generateXML);
 });
 
@@ -113,22 +120,22 @@ function generateXML() {
   const tt = document.getElementById("tiktok").value;
   const fb = document.getElementById("facebook").value;
 
-  const xml = `&lt;coordinates&gt;
-    &lt;location&gt;
-        &lt;name&gt;${name}&lt;/name&gt;
-        &lt;latitude&gt;${lat}&lt;/latitude&gt;
-        &lt;longitude&gt;${lon}&lt;/longitude&gt;
-        &lt;explanation&gt;&lt;![CDATA[
+  const xml = `<coordinates>
+    <location>
+        <name>${name}</name>
+        <latitude>${lat}</latitude>
+        <longitude>${lon}</longitude>
+        <explanation><![CDATA[
             ${rich}
-        ]]&gt;&lt;/explanation&gt;
-        ${plain ? `&lt;description&gt;${plain}&lt;/description&gt;` : ""}
-        &lt;time&gt;${time}&lt;/time&gt;
-        ${yt ? `&lt;youtube&gt;${yt}&lt;/youtube&gt;` : ""}
-        ${ig ? `&lt;instagram&gt;${ig}&lt;/instagram&gt;` : ""}
-        ${tt ? `&lt;tiktok&gt;${tt}&lt;/tiktok&gt;` : ""}
-        ${fb ? `&lt;facebook&gt;${fb}&lt;/facebook&gt;` : ""}
-    &lt;/location&gt;
-&lt;/coordinates&gt;`;
+        ]]></explanation>
+        ${plain ? `<description>${plain}</description>` : ""}
+        <time>${time}</time>
+        ${yt ? `<youtube>${yt}</youtube>` : ""}
+        ${ig ? `<instagram>${ig}</instagram>` : ""}
+        ${tt ? `<tiktok>${tt}</tiktok>` : ""}
+        ${fb ? `<facebook>${fb}</facebook>` : ""}
+    </location>
+</coordinates>`;
 
   document.getElementById("output").textContent = xml;
 }
