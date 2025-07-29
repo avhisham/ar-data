@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coordinates>
+    <location>
+        <name>Garden</name>
+        <latitude>3.172408</latitude>
+        <longitude>101.577545</longitude>
+
+        <!-- Explanation in HTML -->
+        <explanation><![CDATA[
+            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
+        ]]></explanation>
+
+        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
+        <time format="gregorian">1640-01-01</time>
+
+        <!-- Optional media/social links -->
+        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
+        <instagram>https://www.instagram.com/example</instagram>
+        <tiktok>https://www.tiktok.com/@example</tiktok>
+        <facebook>https://www.facebook.com/example</facebook>
+    </location>
+</coordinates>
+<coordinates>
+    <location>
+        <name>Garden2</name>
+        <latitude>3.172408</latitude>
+        <longitude>101.577545</longitude>
+
+        <!-- Explanation in HTML -->
+        <explanation><![CDATA[
+            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
+        ]]></explanation>
+
+        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
+        <time format="gregorian">1640-01-01</time>
+
+        <!-- Optional media/social links -->
+        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
+        <instagram>https://www.instagram.com/example</instagram>
+        <tiktok>https://www.tiktok.com/@example</tiktok>
+        <facebook>https://www.facebook.com/example</facebook>
+    </location>
+</coordinates>
+<coordinates>
+    <location>
+        <name>Garden3</name>
+        <latitude>3.172408</latitude>
+        <longitude>101.577545</longitude>
+
+        <!-- Explanation in HTML -->
+        <explanation><![CDATA[
+            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
+        ]]></explanation>
+
+        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
+        <time format="gregorian">1640-01-01</time>
+
+        <!-- Optional media/social links -->
+        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
+        <instagram>https://www.instagram.com/example</instagram>
+        <tiktok>https://www.tiktok.com/@example</tiktok>
+        <facebook>https://www.facebook.com/example</facebook>
+    </location>
+</coordinates>
