@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <coordinates>
     <location>
-        <name>Garden</name>
-        <latitude>3.172408</latitude>
-        <longitude>101.577545</longitude>
-
-        <!-- Explanation in HTML -->
-        <explanation><![CDATA[
-            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
-        ]]></explanation>
-
-        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
-        <time format="gregorian">1640-01-01</time>
-
-        <!-- Optional media/social links -->
-        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
-        <instagram>https://www.instagram.com/example</instagram>
-        <tiktok>https://www.tiktok.com/@example</tiktok>
-        <facebook>https://www.facebook.com/example</facebook>
+        <name>Uhud</name>
+        <latitude>24.5133</latitude>
+        <longitude>39.6011</longitude>
+        <explanation><![CDATA[<p>Mount Uhud is the site of the famous Battle of Uhud.</p>]]></explanation>
+        <time format="hijri">3 AH</time>
+        <image>uhud.jpg</image>
+        <youtube>https://youtube.com/uhud</youtube>
+        <instagram>https://instagram.com/uhud</instagram>
+        <tiktok>https://tiktok.com/@uhud</tiktok>
+        <facebook>https://facebook.com/uhud</facebook>
+        <category>Battle,Historic</category>
+        <location>Medina</location>
     </location>
-</coordinates>
-<coordinates>
-  <location>
-    <name>Maqam Zubair bin Awwam , Zubairiyah , Basra Iraq</name>
-    <latitude>30.38911778888889</latitude>
-    <longitude>47.705425419444445</longitude>
-    <image>zubair_awwam.jpg</image>
-    <explanation><![CDATA[
-      
-      <p>Zubair was one of the companions whom Allah has promised Jannah. Zubair was Rasulullah's cousin. his mother Safiyyah was Rasulullah's&nbsp; father's sister. His father Awwam , who passed away early , was the brother of Rasulullah's wife Khadijah binti Khuwailid.<br>He passed away during the battle of the Camel. He was one of the leaders with Aishah against Ali but left the battlefield as he did'nt wan to fight anymore. He was followed by an enemy who stabbed him in the back while praying</p>
-    
-    ]]></explanation>
-    
-    <time>656</time>
-    <youtube>https://youtu.be/r9a9DeK654g?feature=shared</youtube>
-    
-    
-    
-  </location>
+
+    <location>
+        <name>Badr</name>
+        <latitude>23.7825</latitude>
+        <longitude>38.7906</longitude>
+        <explanation><![CDATA[<p>Site of the Battle of Badr.</p>]]></explanation>
+        <time format="hijri">2 AH</time>
+        <image>badr.jpg</image>
+        <youtube>https://youtube.com/badr</youtube>
+        <category>Battle</category>
+        <location>Outskirts of Medina</location>
+    </location>
+
+    <location>
+        <name>Masjid al-Haram</name>
+        <latitude>21.4225</latitude>
+        <longitude>39.8262</longitude>
+        <explanation><![CDATA[<p>The holiest site in Islam, located in Mecca.</p>]]></explanation>
+        <time format="hijri">Before Hijrah</time>
+        <image>haram.jpg</image>
+        <category>Mosque,Religious</category>
+        <location>Mecca</location>
+    </location>
 </coordinates>
 <coordinates>
     <location>
