@@ -6,7 +6,7 @@
         <longitude>39.6011</longitude>
         <explanation><![CDATA[<p>Mount Uhud is the site of the famous Battle of Uhud.</p>]]></explanation>
         <time format="hijri">3 AH</time>
-        <image>uhud.jpg</image>
+        <image>image.jpg</image>
         <youtube>https://youtube.com/uhud</youtube>
         <instagram>https://instagram.com/uhud</instagram>
         <tiktok>https://tiktok.com/@uhud</tiktok>
@@ -22,7 +22,7 @@
         <longitude>38.7906</longitude>
         <explanation><![CDATA[<p>Site of the Battle of Badr.</p>]]></explanation>
         <time format="hijri">2 AH</time>
-        <image>badr.jpg</image>
+        <image>image.jpg</image>
         <youtube>https://youtube.com/badr</youtube>
         <category>Battle</category>
         <location>Outskirts of Medina</location>
@@ -35,7 +35,7 @@
         <longitude>39.8262</longitude>
         <explanation><![CDATA[<p>The holiest site in Islam, located in Mecca.</p>]]></explanation>
         <time format="hijri">Before Hijrah</time>
-        <image>haram.jpg</image>
+        <image>image.jpg</image>
         <category>Mosque,Religious</category>
         <location>Mecca</location>
     </location>
