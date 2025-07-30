@@ -1,126 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Image to Coordinates XML Generator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
-  <style>
-    #thumb {
-      max-height: 100px;
-      height: auto;
-      width: auto;
-      display: block;
-      margin-top: 10px;
-    }
-    .drop-zone {
-      border: 2px dashed #ccc;
-      padding: 20px;
-      text-align: center;
-      color: #666;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    #richEditor {
-      border: 1px solid #ccc;
-      padding: 10px;
-      min-height: 150px;
-      background: white;
-    }
-  </style>
-</head>
-<body class="bg-light p-4">
+<?xml version="1.0" encoding="utf-8"?>
+<coordinates>
+    <location>
+        <name>Garden</name>
+        <latitude>3.172408</latitude>
+        <longitude>101.577545</longitude>
 
-<div class="container">
-  <h2 class="mb-4">📍 Image to Coordinates XML Generator</h2>
+        <!-- Explanation in HTML -->
+        <explanation><![CDATA[
+            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
+        ]]></explanation>
 
-  <!-- Drop zone -->
-  <div id="drop-area" class="drop-zone mb-3">
-    Drag & drop a JPG image here
-  </div>
+        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
+        <time format="gregorian">1640-01-01</time>
 
-  <h6>Full Image:</h6>
-  <img id="fullImage" class="img-fluid mb-3" />
+        <!-- Optional media/social links -->
+        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
+        <instagram>https://www.instagram.com/example</instagram>
+        <tiktok>https://www.tiktok.com/@example</tiktok>
+        <facebook>https://www.facebook.com/example</facebook>
+    </location>
+</coordinates>
+<coordinates>
+  <location>
+    <name>Maqam Zubair bin Awwam , Zubairiyah , Basra Iraq</name>
+    <latitude>30.38911778888889</latitude>
+    <longitude>47.705425419444445</longitude>
+    <image>zubair_awwam.jpg</image>
+    <explanation><![CDATA[
+      
+      <p>Zubair was one of the companions whom Allah has promised Jannah. Zubair was Rasulullah's cousin. his mother Safiyyah was Rasulullah's&nbsp; father's sister. His father Awwam , who passed away early , was the brother of Rasulullah's wife Khadijah binti Khuwailid.<br>He passed away during the battle of the Camel. He was one of the leaders with Aishah against Ali but left the battlefield as he did'nt wan to fight anymore. He was followed by an enemy who stabbed him in the back while praying</p>
+    
+    ]]></explanation>
+    
+    <time>656</time>
+    <youtube>https://youtu.be/r9a9DeK654g?feature=shared</youtube>
+    
+    
+    
+  </location>
+</coordinates>
+<coordinates>
+    <location>
+        <name>Garden3</name>
+        <latitude>3.172408</latitude>
+        <longitude>101.577545</longitude>
 
-  <h6>Thumbnail (max-height 100px):</h6>
-  <img id="thumb" />
+        <!-- Explanation in HTML -->
+        <explanation><![CDATA[
+            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
+        ]]></explanation>
 
-  <div class="mt-2">
-    <label class="form-label">📁 File name (no extension):</label>
-    <input type="text" id="thumbnailName" class="form-control" placeholder="e.g., garden">
-    <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
-  </div>
+        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
+        <time format="gregorian">1640-01-01</time>
 
-  <!-- Location Name + Coordinates -->
-  <div class="row g-3 mt-4">
-    <div class="col-md-6">
-      <label class="form-label">📌 Location Name</label>
-      <input type="text" id="name" class="form-control" placeholder="e.g., Maqam Imam Abu Hanifa">
-    </div>
-    <div class="col-md-3">
-      <label class="form-label">📍 Latitude</label>
-      <input type="text" id="latitude" class="form-control" readonly>
-    </div>
-    <div class="col-md-3">
-      <label class="form-label">📍 Longitude</label>
-      <input type="text" id="longitude" class="form-control" readonly>
-    </div>
-  </div>
-
-  <!-- NEW: Category + Location Tag Inputs -->
-  <div class="row g-3 mt-3">
-    <div class="col-md-6">
-      <label class="form-label">🏷️ Category (comma-separated)</label>
-      <input type="text" id="category" class="form-control" placeholder="e.g., Mosque,Religious">
-    </div>
-    <div class="col-md-6">
-      <label class="form-label">🌍 Location Tag</label>
-      <input type="text" id="locationTag" class="form-control" placeholder="e.g., Mecca">
-    </div>
-  </div>
-
-  <div class="mt-4">
-    <label class="form-label">📝 Rich HTML Description</label>
-    <div id="richEditor" contenteditable="true" class="form-control">
-      <p>This is a <strong>rich</strong> HTML editor. Add <em>formatted</em> text here.</p>
-    </div>
-  </div>
-
-  <div class="mt-3">
-    <label class="form-label">🧾 Plain Text Summary</label>
-    <textarea id="plainText" class="form-control" rows="2"></textarea>
-  </div>
-
-  <div class="mt-3">
-    <label class="form-label">📅 Time (e.g., 1640-01-01 or 1052H)</label>
-    <input type="text" id="time" class="form-control">
-  </div>
-
-  <!-- Social -->
-  <div class="row g-3 mt-4">
-    <div class="col-md-6"><label class="form-label">🎥 YouTube</label><input type="url" id="youtube" class="form-control social"></div>
-    <div class="col-md-6"><label class="form-label">📸 Instagram</label><input type="url" id="instagram" class="form-control social"></div>
-    <div class="col-md-6"><label class="form-label">🎵 TikTok</label><input type="url" id="tiktok" class="form-control social"></div>
-    <div class="col-md-6"><label class="form-label">📘 Facebook</label><input type="url" id="facebook" class="form-control social"></div>
-  </div>
-
-  <!-- Output -->
-  <div class="mt-4">
-    <label class="form-label">📄 Generated XML</label>
-    <pre id="output" class="bg-white border p-3 rounded"></pre>
-    <button class="btn btn-outline-secondary mt-2" onclick="copyXML()">📋 Copy XML</button>
-    <button class="btn btn-outline-success mt-2" onclick="saveXML()">💾 Save XML</button>
-  </div>
-</div>
-
-<script>
-const dropArea = document.getElementById("drop-area");
-const fullImage = document.getElementById("fullImage");
-const thumb = document.getElementById("thumb");
-const canvas = document.createElement("canvas");
-const ctx = canvas.getContext("2d");
-
-dropArea.addEventListener("dragover", e => e.preventDefault());
-dropArea.addEventListener("drop", async e => {
-  e.preventDefault()
+        <!-- Optional media/social links -->
+        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
+        <instagram>https://www.instagram.com/example</instagram>
+        <tiktok>https://www.tiktok.com/@example</tiktok>
+        <facebook>https://www.facebook.com/example</facebook>
+    </location>
+</coordinates>
