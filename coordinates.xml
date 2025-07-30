@@ -21,25 +21,23 @@
     </location>
 </coordinates>
 <coordinates>
-    <location>
-        <name>Garden2</name>
-        <latitude>3.172408</latitude>
-        <longitude>101.577545</longitude>
-
-        <!-- Explanation in HTML -->
-        <explanation><![CDATA[
-            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
-        ]]></explanation>
-
-        <!-- Historical timestamp: flexible Gregorian or Hijri format -->
-        <time format="gregorian">1640-01-01</time>
-
-        <!-- Optional media/social links -->
-        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
-        <instagram>https://www.instagram.com/example</instagram>
-        <tiktok>https://www.tiktok.com/@example</tiktok>
-        <facebook>https://www.facebook.com/example</facebook>
-    </location>
+  <location>
+    <name>Maqam Zubair bin Awwam , Zubairiyah , Basra Iraq</name>
+    <latitude>30.38911778888889</latitude>
+    <longitude>47.705425419444445</longitude>
+    <image>zubair_awwam.jpg</image>
+    <explanation><![CDATA[
+      
+      <p>Zubair was one of the companions whom Allah has promised Jannah. Zubair was Rasulullah's cousin. his mother Safiyyah was Rasulullah's&nbsp; father's sister. His father Awwam , who passed away early , was the brother of Rasulullah's wife Khadijah binti Khuwailid.<br>He passed away during the battle of the Camel. He was one of the leaders with Aishah against Ali but left the battlefield as he did'nt wan to fight anymore. He was followed by an enemy who stabbed him in the back while praying</p>
+    
+    ]]></explanation>
+    
+    <time>656</time>
+    <youtube>https://youtu.be/r9a9DeK654g?feature=shared</youtube>
+    
+    
+    
+  </location>
 </coordinates>
 <coordinates>
     <location>
