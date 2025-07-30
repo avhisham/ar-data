@@ -52,7 +52,7 @@
     <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
   </div>
 
-  <!-- Location -->
+  <!-- Location Name + Coordinates -->
   <div class="row g-3 mt-4">
     <div class="col-md-6">
       <label class="form-label">📌 Location Name</label>
@@ -68,7 +68,18 @@
     </div>
   </div>
 
-  <!-- Rich description -->
+  <!-- NEW: Category + Location Tag Inputs -->
+  <div class="row g-3 mt-3">
+    <div class="col-md-6">
+      <label class="form-label">🏷️ Category (comma-separated)</label>
+      <input type="text" id="category" class="form-control" placeholder="e.g., Mosque,Religious">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">🌍 Location Tag</label>
+      <input type="text" id="locationTag" class="form-control" placeholder="e.g., Mecca">
+    </div>
+  </div>
+
   <div class="mt-4">
     <label class="form-label">📝 Rich HTML Description</label>
     <div id="richEditor" contenteditable="true" class="form-control">
@@ -94,7 +105,7 @@
     <div class="col-md-6"><label class="form-label">📘 Facebook</label><input type="url" id="facebook" class="form-control social"></div>
   </div>
 
-  <!-- XML output -->
+  <!-- Output -->
   <div class="mt-4">
     <label class="form-label">📄 Generated XML</label>
     <pre id="output" class="bg-white border p-3 rounded"></pre>
@@ -138,7 +149,7 @@ dropArea.addEventListener("drop", async e => {
   img.src = imgURL;
 });
 
-["name", "plainText", "time", "youtube", "instagram", "tiktok", "facebook", "thumbnailName"].forEach(id => {
+["name", "plainText", "time", "youtube", "instagram", "tiktok", "facebook", "thumbnailName", "category", "locationTag"].forEach(id => {
   document.getElementById(id).addEventListener("input", generateXML);
 });
 document.getElementById("richEditor").addEventListener("input", generateXML);
@@ -150,6 +161,8 @@ function generateXML() {
   const rich = document.getElementById("richEditor").innerHTML;
   const plain = document.getElementById("plainText").value;
   const time = document.getElementById("time").value;
+  const category = document.getElementById("category").value;
+  const locationTag = document.getElementById("locationTag").value;
   const yt = document.getElementById("youtube").value;
   const ig = document.getElementById("instagram").value;
   const tt = document.getElementById("tiktok").value;
@@ -163,6 +176,8 @@ function generateXML() {
     <latitude>${lat}</latitude>
     <longitude>${lon}</longitude>
     <image>${imageFile}</image>
+    ${category ? `<category>${category}</category>` : ""}
+    ${locationTag ? `<location>${locationTag}</location>` : ""}
     <explanation><![CDATA[
       ${rich}
     ]]></explanation>
