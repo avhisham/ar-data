@@ -238,23 +238,32 @@ function saveThumbnail() {
 
 // 🌐 Extract coordinates from Google Maps or similar URL
 function extractCoordinates() {
-  const url = document.getElementById("mapLink").value.trim();
+  const input = document.getElementById("mapLink").value.trim();
   let lat, lon;
 
   try {
-    // Match @lat,lon in Google Maps URL
-    const match = url.match(/@(-?\d+\.\d+),\s*(-?\d+\.\d+)/);
+    // 1. Google Maps format: @lat,lon
+    let match = input.match(/@(-?\d+\.\d+),\s*(-?\d+\.\d+)/);
     if (match) {
       lat = match[1];
       lon = match[2];
     }
 
-    // Fallback: ?q=lat,lon (used in some maps)
+    // 2. Query parameter format: ?q=lat,lon
     if (!lat || !lon) {
-      const queryMatch = url.match(/[?&]q=(-?\d+\.\d+),\s*(-?\d+\.\d+)/);
-      if (queryMatch) {
-        lat = queryMatch[1];
-        lon = queryMatch[2];
+      match = input.match(/[?&]q=(-?\d+\.\d+),\s*(-?\d+\.\d+)/);
+      if (match) {
+        lat = match[1];
+        lon = match[2];
+      }
+    }
+
+    // 3. Plain coordinates: lat, lon (e.g. "21.424618, 39.830347")
+    if (!lat || !lon) {
+      match = input.match(/^\s*(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)\s*$/);
+      if (match) {
+        lat = match[1];
+        lon = match[2];
       }
     }
 
@@ -264,12 +273,13 @@ function extractCoordinates() {
       generateXML();
       alert("✅ Coordinates extracted: " + lat + ", " + lon);
     } else {
-      alert("❌ Could not extract coordinates. Please check the URL format.");
+      alert("❌ Could not extract coordinates. Please check the format.");
     }
   } catch (e) {
-    alert("❌ Error parsing URL: " + e.message);
+    alert("❌ Error parsing input: " + e.message);
   }
 }
+
 </script>
 
 </body>
