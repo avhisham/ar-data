@@ -68,8 +68,8 @@
 
     <location>
         <name>House of Khadijah</name>
-        <latitude>21.4229</latitude>
-        <longitude>39.8260</longitude>
+        <latitude>21.424822283734688</latitude>
+        <longitude>39.82809477588735</longitude>
         <explanation><![CDATA[<p>The home of Khadijah bint Khuwaylid, where the Prophet Muhammad ? lived after marriage.</p>]]></explanation>
         <time format="hijri">Early Islam</time>
         <image>house_khadijah.jpg</image>
@@ -101,8 +101,8 @@
 
     <location>
         <name>House of Abu Bakar</name>
-        <latitude>21.4236</latitude>
-        <longitude>39.8265</longitude>
+        <latitude>21.42031145857695</latitude>
+        <longitude>39.82389770177451</longitude>
         <explanation><![CDATA[<p>The home of Abu Bakr as-Siddiq in Makkah.</p>]]></explanation>
         <time format="hijri">Pre-Hijrah</time>
         <image>house_abu_bakr_makkah.jpg</image>
@@ -112,10 +112,15 @@
 
     <location>
         <name>Masjid Rayah</name>
-        <latitude>21.4239</latitude>
-        <longitude>39.8257</longitude>
-        <explanation><![CDATA[<p>A mosque built near the site where the Prophet ? raised his banner.</p>]]></explanation>
-        <time format="hijri">8 AH</time>
+        <latitude>21.431589772371627</latitude>
+        <longitude>39.82922479903408</longitude>
+    <explanation><![CDATA[
+      
+      <p><font color="#444444" face="Arial, Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 17px;"><b>The Masjid al-Rayah</b> (مسجد الراية), from Arabic "Mosque of the Banner", referring to the war banner of Prophet Muhammad at the Conquest of Mecca (فتح مكة), is a small masjid in the Shi'b 'Aamir (Valley of 'Aamir).&nbsp;</span></font></p><p><span style="font-size: 17px; color: rgb(68, 68, 68); font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">It is located in the as-Sulaymaniyyah district east of the Masjid al-Shajarah&nbsp;</span></p><p><span style="font-size: 17px; color: rgb(68, 68, 68); font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">Prophet Muhammad entered the city of Makkah on the day of the Fatah Makkah from here.</span></p><p><span style="font-size: 17px; color: rgb(68, 68, 68); font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">The masjid was first built by <b>Abdullah bin Abbas bin Ali bin Abdullah bin Abbas</b>, and later rebuilt by <b>Abbasiah Khalifah al-Mu'atasim</b> circa year 1243 CE (640H.)</span></p>
+    
+    ]]></explanation>
+    
+    <time>640H</time>
         <image>image.jpg</image>
         <category>Masjid</category>
         <place>Makkah</place>
