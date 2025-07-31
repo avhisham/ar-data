@@ -143,9 +143,13 @@
 
     <location>
         <name>Masjid Jin</name>
-        <latitude>21.4267</latitude>
-        <longitude>39.8263</longitude>
-        <explanation><![CDATA[<p>The mosque built where Prophet  recited Qur'an to a group of jinn.</p>]]></explanation>
+    <latitude>21.433451440458626</latitude>
+    <longitude>39.82893473919095</longitude>
+    <explanation><![CDATA[
+      
+      <p><font color="#444444" face="Arial, Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 17px;"><b>The Masjid al-Jinn</b> (مسجد الجنّ) is located near Jannat al-Mu'alla. It is also known as the Masjid of Allegiance (مسجد بِيعات, Masjid Biy‘āt) and the Masjid of Guards (مسجد الحرس, Masjid al-Ḥaras) as the city guards would patrol up to that point.</span></font></p><p><span style="font-size: 17px; color: rgb(68, 68, 68); font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">This is the site&nbsp; where a group of jinn&nbsp; gathered one night to hear the recitation of the Quran by prophet Muhammad. They then accepted&nbsp; Islam and they bay'ah (oath of allegiance) to him. This is mentioned in Surah al-Jinn in the&nbsp; Quran.</span></p><p><font color="#444444" face="Arial, Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 17px;">It is also one of the oldest masjid in Makkah</span></font></p>
+    
+    ]]></explanation>
         <time format="hijri">10 BH</time>
         <image>image.jpg</image>
         <category>Masjid</category>
