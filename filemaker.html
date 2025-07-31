@@ -35,10 +35,7 @@
 <div class="container">
   <h2 class="mb-4">📍 Image to Coordinates XML Generator</h2>
 
-  <!-- Drop zone -->
-  <div id="drop-area" class="drop-zone mb-3">
-    Drag & drop a JPG image here
-  </div>
+  <div id="drop-area" class="drop-zone mb-3">Drag & drop a JPG image here</div>
 
   <h6>Full Image:</h6>
   <img id="fullImage" class="img-fluid mb-3" />
@@ -49,10 +46,9 @@
   <div class="mt-2">
     <label class="form-label">📁 File name (no extension):</label>
     <input type="text" id="thumbnailName" class="form-control" placeholder="e.g., garden">
-    <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">💾 Save Thumbnail</button>
+    <button class="btn btn-outline-info mt-2" onclick="saveThumbnail()">📂 Save Thumbnail</button>
   </div>
 
-  <!-- Location Name + Coordinates -->
   <div class="row g-3 mt-4">
     <div class="col-md-6">
       <label class="form-label">📌 Location Name</label>
@@ -68,7 +64,6 @@
     </div>
   </div>
 
-  <!-- NEW: Category + Location Tag Inputs -->
   <div class="row g-3 mt-3">
     <div class="col-md-6">
       <label class="form-label">🏷️ Category (comma-separated)</label>
@@ -93,11 +88,10 @@
   </div>
 
   <div class="mt-3">
-    <label class="form-label">📅 Time (e.g., 1640-01-01 or 1052H)</label>
+    <label class="form-label">🗓️ Time (e.g., 1640-01-01 or 1052H)</label>
     <input type="text" id="time" class="form-control">
   </div>
 
-  <!-- Social -->
   <div class="row g-3 mt-4">
     <div class="col-md-6"><label class="form-label">🎥 YouTube</label><input type="url" id="youtube" class="form-control social"></div>
     <div class="col-md-6"><label class="form-label">📸 Instagram</label><input type="url" id="instagram" class="form-control social"></div>
@@ -105,12 +99,11 @@
     <div class="col-md-6"><label class="form-label">📘 Facebook</label><input type="url" id="facebook" class="form-control social"></div>
   </div>
 
-  <!-- Output -->
   <div class="mt-4">
     <label class="form-label">📄 Generated XML</label>
     <pre id="output" class="bg-white border p-3 rounded"></pre>
     <button class="btn btn-outline-secondary mt-2" onclick="copyXML()">📋 Copy XML</button>
-    <button class="btn btn-outline-success mt-2" onclick="saveXML()">💾 Save XML</button>
+    <button class="btn btn-outline-success mt-2" onclick="saveXML()">📂 Save XML</button>
   </div>
 </div>
 
@@ -130,24 +123,32 @@ dropArea.addEventListener("drop", async e => {
   const imgURL = URL.createObjectURL(file);
   fullImage.src = imgURL;
 
-  const gps = await exifr.gps(file);
-  document.getElementById("latitude").value = gps.latitude || "";
-  document.getElementById("longitude").value = gps.longitude || "";
+  try {
+    const gps = await exifr.gps(file);
+    document.getElementById("latitude").value = gps.latitude || "";
+    document.getElementById("longitude").value = gps.longitude || "";
+  } catch (err) {
+    console.warn("No EXIF GPS data found.");
+  }
 
   const img = new Image();
   img.onload = () => {
-    const ratio = img.width / img.height;
-    const h = 100;
-    const w = h * ratio;
-    canvas.width = w;
-    canvas.height = h;
-    ctx.clearRect(0, 0, w, h);
-    ctx.drawImage(img, 0, 0, w, h);
-    thumb.src = canvas.toDataURL("image/jpeg");
+    generateThumbnail(img);
     generateXML();
   };
   img.src = imgURL;
 });
+
+function generateThumbnail(img) {
+  const ratio = img.width / img.height;
+  const h = 100;
+  const w = h * ratio;
+  canvas.width = w;
+  canvas.height = h;
+  ctx.clearRect(0, 0, w, h);
+  ctx.drawImage(img, 0, 0, w, h);
+  thumb.src = canvas.toDataURL("image/jpeg");
+}
 
 ["name", "plainText", "time", "youtube", "instagram", "tiktok", "facebook", "thumbnailName", "category", "locationTag"].forEach(id => {
   document.getElementById(id).addEventListener("input", generateXML);
