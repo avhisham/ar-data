@@ -35,23 +35,117 @@
             <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
         ]]></explanation>
         <time format="gregorian">1640-01-01</time>
+        <image>image.jpg</image>
         <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
         <instagram>https://www.instagram.com/example</instagram>
         <tiktok>https://www.tiktok.com/@example</tiktok>
         <facebook>https://www.facebook.com/example</facebook>
+        <category>KD</category>
+        <place>Selangor</place>
     </location>
 
     <location>
-        <name>Garden3</name>
-        <latitude>3.172408</latitude>
-        <longitude>101.577545</longitude>
-        <explanation><![CDATA[
-            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
-        ]]></explanation>
-        <time format="gregorian">1640-01-01</time>
-        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
-        <instagram>https://www.instagram.com/example</instagram>
-        <tiktok>https://www.tiktok.com/@example</tiktok>
-        <facebook>https://www.facebook.com/example</facebook>
+        <name>Masjid al Haram</name>
+        <latitude>21.4225</latitude>
+        <longitude>39.8262</longitude>
+        <explanation><![CDATA[<p>The holiest mosque in Islam, located in Makkah, surrounding the Kaaba.</p>]]></explanation>
+        <time format="hijri">Pre-Islamic</time>
+        <image>image.jpg</image>
+        <category>Masjid</category>
+        <place>Makkah</place>
     </location>
+
+    <location>
+        <name>Birthplace of Rasulullah</name>
+        <latitude>21.4228</latitude>
+        <longitude>39.8256</longitude>
+        <explanation><![CDATA[<p>Believed to be the house where Prophet Muhammad ? was born in the Year of the Elephant.</p>]]></explanation>
+        <time format="hijri">~53 BH</time>
+        <image>image.jpg</image>
+        <category>Historical</category>
+        <place>Makkah</place>
+    </location>
+
+    <location>
+        <name>House of Khadijah</name>
+        <latitude>21.4229</latitude>
+        <longitude>39.8260</longitude>
+        <explanation><![CDATA[<p>The home of Khadijah bint Khuwaylid, where the Prophet Muhammad ? lived after marriage.</p>]]></explanation>
+        <time format="hijri">Early Islam</time>
+        <image>image.jpg</image>
+        <category>Historical</category>
+        <place>Makkah</place>
+    </location>
+
+    <location>
+        <name>Shib Abu Talib</name>
+        <latitude>21.4260</latitude>
+        <longitude>39.8270</longitude>
+        <explanation><![CDATA[<p>The valley where the Prophet's clan was boycotted for three years.</p>]]></explanation>
+        <time format="hijri">7 BH</time>
+        <image>image.jpg</image>
+        <category>Historical</category>
+        <place>Makkah</place>
+    </location>
+
+    <location>
+        <name>Darul Arqam</name>
+        <latitude>21.4234</latitude>
+        <longitude>39.8240</longitude>
+        <explanation><![CDATA[<p>The first house used for secret da'wah in Makkah.</p>]]></explanation>
+        <time format="hijri">Early Islam</time>
+        <image>image.jpg</image>
+        <category>Da'wah</category>
+        <place>Makkah</place>
+    </location>
+
+    <location>
+        <name>House of Abu Bakar</name>
+        <latitude>21.4236</latitude>
+        <longitude>39.8265</longitude>
+        <explanation><![CDATA[<p>The home of Abu Bakr as-Siddiq in Makkah.</p>]]></explanation>
+        <time format="hijri">Pre-Hijrah</time>
+        <image>image.jpg</image>
+        <category>Sahabi</category>
+        <place>Makkah</place>
+    </location>
+
+    <location>
+        <name>Masjid Rayah</name>
+        <latitude>21.4239</latitude>
+        <longitude>39.8257</longitude>
+        <explanation><![CDATA[<p>A mosque built near the site where the Prophet ? raised his banner.</p>]]></explanation>
+        <time format="hijri">8 AH</time>
+        <image>image.jpg</image>
+        <category>Masjid</category>
+        <place>Makkah</place>
+    </location>
+
+    <location>
+        <name>Masjid Shajarah</name>
+        <latitude>21.4119</latitude>
+        <longitude>39.8928</longitude>
+        <explanation><![CDATA[<p>Also known as Masjid Dhul-Hulayfah, the Miqat for people of Madinah.</p>]]></explanation>
+        <time format="hijri">Prophetic Era</time>
+        <image>image.jpg</image>
+        <category>Masjid</category>
+        <place>Madinah</place>
+    </location>
+
+    <location>
+        <name>Masjid Jin</name>
+        <latitude>21.4267</latitude>
+        <longitude>39.8263</longitude>
+        <explanation><![CDATA[<p>The mosque built where Prophet  recited Qur'an to a group of jinn.</p>]]></explanation>
+        <time format="hijri">10 BH</time>
+        <image>image.jpg</image>
+        <category>Masjid</category>
+        <place>Makkah</place>
+    </location>
+
+    <!-- Additional locations to follow in next continuation -->
+</coordinates>
+
+
+
 </coordinates>
