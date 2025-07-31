@@ -128,9 +128,13 @@
 
     <location>
         <name>Masjid Shajarah</name>
-        <latitude>21.4119</latitude>
-        <longitude>39.8928</longitude>
-        <explanation><![CDATA[<p>Also known as Masjid Dhul-Hulayfah, the Miqat for people of Madinah.</p>]]></explanation>
+        <latitude>21.431987001735102</latitude>
+        <longitude>39.82845287951872</longitude>
+            <explanation><![CDATA[
+      
+      <p><font color="#444444" face="Arial, Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 17px;"><b>The Masjid Shajarah </b>(مسجد الشجرة) meaning the "masjid of the tree" is located in the in&nbsp; Shi'b Aamir (Valley of'Aamir), it marks the place&nbsp; where the "miracle of the tree" is believed to have happened. Now the mosque is also called the Masjid al-Jandrawi (مسجد الجندراوي).</span></font></p><p><span style="font-size: 17px; color: rgb(68, 68, 68); font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">as per record, the masjid is located at the foot of the mountain opposite Al-Hajun near the Masjid Al-Jin, at the entrance to the Al-Ma’ala cemetery from the Gaza side</span></p><p><font color="#444444" face="Arial, Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 17px;">Hadis narrates a miracle&nbsp; of prophet Muhammad. When he was asked to show a miracle by mushriks, he called a tree, which&nbsp; walked towards him,&nbsp; and declared the prophethood and&nbsp; then went back.</span></font></p><p><font color="#444444" face="Arial, Helvetica Neue, Helvetica, Arial, sans-serif"><span style="font-size: 17px;">Another hadis relates on how&nbsp; when the Prophet feeling dejected and&nbsp; asked Allah for a sign. He was then asked to summon a nearby tree which tore the roots through the ground towards him, offered salam and returned. The Prophet then said, "I now have no concern for the people's rejection."</span></font></p>
+    
+    ]]></explanation>
         <time format="hijri">Prophetic Era</time>
         <image>image.jpg</image>
         <category>Masjid</category>
