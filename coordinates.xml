@@ -158,7 +158,20 @@
 
     <!-- Additional locations to follow in next continuation -->
 </coordinates>
-
+<location>
+    <name>Masjid Areesh</name>
+    <latitude>23.775216955459424</latitude>
+    <longitude>38.79340811991341</longitude>
+    <explanation><![CDATA[
+        <p>Masjid Areesh is built on the site where the tent of the Prophet (ﷺ) was pitched during the Battle of Badr. It served as the headquarters from which the Prophet (ﷺ) directed the battle.</p>
+        <p>On the suggestion of Sa‘d bin Mu‘adh (رضي الله عنه), a shelter was constructed from palm branches, guarded mainly by the Ansar under his leadership. The Prophet (ﷺ) remained inside, supplicating intensely for hours for Allah’s victory, saying: “O Allah, if this small group of believers is destroyed, You will not be worshipped on earth as You deserve. O Allah, grant us victory now.”</p>
+        <p>Abu Bakr (رضي الله عنه) stood guard with his sword drawn, protecting the Prophet (ﷺ) while he prayed.</p>
+    ]]></explanation>
+    <time format="hijri">2 AH (Battle of Badr)</time>
+    <image>masjid_areesh.jpg</image>
+    <category>Masjid</category>
+    <place>Badr</place>
+</location>
 
 
 </coordinates>
