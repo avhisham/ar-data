@@ -191,9 +191,24 @@
     <category>Masjid</category>
     <place>Makkah, Fath-07</place>
 </location>
-</coordinates>
+<location>
+    <name>Jabal Thawr</name>
+    <latitude>21.37921631704461</latitude>
+    <longitude>39.849257375532886</longitude>
+    <explanation><![CDATA[
+        <p><strong>Jabal Thawr</strong> (Arabic: جَبَل ثَوْر) is a mountain south of Makkah, notable for the cave of <strong>Ghār Thawr</strong> where the Prophet ﷺ and Abu Bakr (رضي الله عنه) hid for three days during the Hijrah to Madinah.</p>
+        <p>Upon arrival, Abu Bakr (رضي الله عنه) entered first to clear the cave and block holes with cloth. The Prophet ﷺ slept on his lap, and when Abu Bakr (رضي الله عنه) was stung, he endured the pain silently until the Prophet ﷺ healed it with his spittle.</p>
+        <p>They remained hidden while Abu Bakr’s (رضي الله عنه) son Abdullah brought news each night, and Amir bin Fuhayra (رضي الله عنه) grazed goats nearby to provide milk and cover tracks. Allah (ﷻ) sent a spider to weave a web and doves to nest at the entrance, deterring the Quraysh search party.</p>
+        <p>The Prophet ﷺ reassured Abu Bakr (رضي الله عنه): “How can you fear for two when the third is Allah?” [Qur'an 9:40]. After three days, Asma (رضي الله عنها) brought provisions, tying them with her torn waistband, earning the title “She of the two waistband.” They then departed towards Madinah.</p>
+    ]]></explanation>
+    <time format="hijri">1 AH (Hijrah)</time>
+    <image>jabal_thawr.jpg</image>
+    <category>Mountain</category>
+    <place>Makkah,Hijra-10</place>
+</location>
 
 
 </coordinates>
+
 
 
