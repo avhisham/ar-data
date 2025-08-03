@@ -74,11 +74,11 @@
         <time format="hijri">Early Islam</time>
         <image>house_khadijah.jpg</image>
         <category>Historical</category>
-        <place>Makkah</place>
+        <place>Makkah, Hijra-01</place>
     </location>
 
     <location>
-        <name>Shib Abu Talib</name>
+        <name>Shi'ib Abu Talib</name>
         <latitude>21.4260</latitude>
         <longitude>39.8270</longitude>
         <explanation><![CDATA[<p>The valley where the Prophet's clan was boycotted for three years.</p>]]></explanation>
@@ -107,7 +107,7 @@
         <time format="hijri">Pre-Hijrah</time>
         <image>house_abu_bakr_makkah.jpg</image>
         <category>Sahabi</category>
-        <place>Makkah</place>
+        <place>Makkah, Hijra-03</place>
     </location>
 
     <location>
@@ -123,7 +123,7 @@
     <time>640H</time>
         <image>image.jpg</image>
         <category>Masjid</category>
-        <place>Makkah</place>
+        <place>Makkah, Fath-03</place>
     </location>
 
     <location>
@@ -170,7 +170,7 @@
     <time format="hijri">2 AH (Battle of Badr)</time>
     <image>masjid_areesh.jpg</image>
     <category>Masjid</category>
-    <place>Badr</place>
+    <place>Badr, Badr-05</place>
 </location>
 
 <coordinates>
@@ -189,9 +189,11 @@
     <time format="hijri">8 AH – 1433 AH</time>
     <image>masjid_al_rayah.jpg</image>
     <category>Masjid</category>
-    <place>Makkah</place>
+    <place>Makkah, Fath-07</place>
 </location>
 </coordinates>
 
 
 </coordinates>
+
+

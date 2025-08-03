@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>My Journey Route</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>html,body,#map{height:100%;margin:0}</style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const points = [
+      // pull from your coordinates.xml or paste manually:
+      { lat: 21.4275, lon: 39.8262, description: "<strong>Fath-03</strong><br>Masjid Rayah" },
+      { lat: 21.4290, lon: 39.8275, description: "<strong>Fath-07</strong><br>Masjid Rayah (Original)" }
+      // … etc …
+    ];
+
+    const map = L.map('map').setView([points[0].lat, points[0].lon], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const latlngs = [];
+    points.forEach(pt => {
+      latlngs.push([pt.lat, pt.lon]);
+      L.marker([pt.lat, pt.lon]).addTo(map).bindPopup(pt.description);
+    });
+
+    L.polyline(latlngs, { color:'blue', dashArray:'8,8', weight:4 }).addTo(map);
+    map.fitBounds(latlngs, { padding:[20,20] });
+  </script>
+</body>
+</html>
