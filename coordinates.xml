@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <coordinates>
+
+  <location>
+    <name>Wadi al-Muhassab</name>
+    <latitude>21.44152276327369</latitude>
+    <longitude>39.84590191534472</longitude>
+    <image>image.jpg</image>
+    <category>Hajj</category>
+    <location>Makkah</location>
+    <explanation><![CDATA[
+      
+      <p>Referred to as “al-Muhassab,” the area derives its name from the accumulation of stones carried down by water from neighbouring mountains. The name “al-Abtah” signifies a wide area after a valley. It is also named “Khayf Bani Kinanah”, named after one of the tribes that participated in the boycott against Banu Hashim, the Prophet Muhammad’s ﷺ tribe. Today, the area is known as “al-Ma’abdah”.<br><br>During the Farewell Hajj on the 13th of Dhul Hijjah, after leaving Mina, the Prophet ﷺ stayed at Wadi al-Muhassab. It was the same place in which he encamped between the 4th and 8th of Dhul Hijjah, after having completed his Umrah.&nbsp;<br><br>It was also the practice of some of the companions including Abu Bakr, Umar, Uthman, Ali and Abdullah ibn Umar M to alight in al-Muhassab after departing from Mina, where they would observe the prayers and rest for a period of time, as the Prophet ﷺ had done</p>
+    
+    ]]></explanation>
+    <description>During the Farewell Hajj on the 13th of Dhul Hijjah, after leaving Mina, the Prophet ﷺ stayed at Wadi al-Muhassab. It was the same place in which he encamped between the 4th and 8th of Dhul Hijjah, after having completed his Umrah. </description>
+    <time></time>
+
+  </location>
+
     <location>
         <name>Uhud</name>
         <latitude>24.5133</latitude>
@@ -209,6 +227,7 @@
 
 
 </coordinates>
+
 
 
 
