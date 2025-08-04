@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <coordinates>
+    <location>
+    <name>Wadi al-Muhassab</name>
+    <latitude>21.422785463508184</latitude>
+    <longitude>39.82133240000814</longitude>
+    <image>Al-Shubaika Cemetery.jpg</image>
+    <category>Cemetery</category>
+    <location>Makkah</location>
+    <explanation><![CDATA[
+      
+      <p>Prior to the advent of Islam some of the pagan Arabs used to practice the jahiliyyah act of burying their daughters alive, believing them to be a sign of disgrace. They are said to have been buried in the Al-Shabeka Graveyard. It’s also reported that Sumayyah (رضي الله عنها) is buried here. She was the first person to be martyred in the cause of Islam.</p><p><br></p><p>Zayd Ibn Amr ibn Nufail was a hanif who passed away before nubuwat of Rasulullah but had met Rasulullah earlier. He would go there trying to prevent these girls from being buried alive. He is said to have saved hundreds of girls</p>
+    
+    ]]></explanation>
+    
+    <time></time>
+    
+    
+    
+    
+  </location>
 
   <location>
     <name>Wadi al-Muhassab</name>
@@ -227,6 +246,7 @@
 
 
 </coordinates>
+
 
 
 
