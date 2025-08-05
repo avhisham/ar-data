@@ -6,7 +6,7 @@
     <longitude>39.81664895337286</longitude>
     <image>zu_tuwa.jpg</image>
     <category>Well</category>
-    <place>Makkah,Hajj Wida-10,Fath-01</place>
+    <place>Makkah,Hajj Wida-10,Fath-10</place>
     <explanation><![CDATA[
       
       <p><b>Dhu Tuwa</b> is known as Jarwal or Abar al-Zahir today. the masjid there has been demolished. only the well is there but no water</p><p>The Prophet ﷺ stopped here during the C<b>onquest of Makkah</b>. Marching into Makkah, with 10 000&nbsp; men, they reached Dhu Tuwa. From there, he saw that there was no opposing army in&nbsp; Makkah. He&nbsp; divided the Muslims into battalions and&nbsp;<span style="font-size: 1rem;">stayed overnight</span><span style="font-size: 1rem;">. The next morning, he drank from the well, performed wudhu, and then proceeded to enter Makkah.</span></p><p>Before entering Makkah for the <b>Farewell Hajj</b>, the Prophet ﷺ encamped at here at . He spent the night. On the morning of the 4th of Dhul Hijjah, the Prophet ﷺ performed Fajr neear rthere . He then bathed himself using the water from the Bir Tuwa, which was his usual practice before entering Makkah.</p>
@@ -75,8 +75,8 @@
         <time format="hijri">2 AH</time>
         <image>image.jpg</image>
         <youtube>https://youtube.com/badr</youtube>
-        <category>Battle,</category>
-        <place>Badr Badr-30</place>
+        <category>Battle</category>
+        <place>Badr, Badr-30</place>
     </location>
 
     <location>
@@ -126,7 +126,7 @@
         <time format="hijri">Early Islam</time>
         <image>house_khadijah.jpg</image>
         <category>Historical</category>
-        <place>Makkah, Hijra-01</place>
+        <place>Makkah, Hijra-10</place>
     </location>
 
     <location>
@@ -147,7 +147,7 @@
         <explanation><![CDATA[<p>The first house used for secret da'wah in Makkah.</p>]]></explanation>
         <time format="hijri">Early Islam</time>
         <image>image.jpg</image>
-        <category>Da'wah</category>
+        <category>Da'wah,Historical</category>
         <place>Makkah</place>
     </location>
 
@@ -159,7 +159,7 @@
         <time format="hijri">Pre-Hijrah</time>
         <image>house_abu_bakr_makkah.jpg</image>
         <category>Sahabi</category>
-        <place>Makkah, Hijra-03</place>
+        <place>Makkah, Hijra-15</place>
     </location>
 
     <location>
@@ -175,7 +175,7 @@
     <time>640H</time>
         <image>image.jpg</image>
         <category>Masjid</category>
-        <place>Makkah, Fath-03</place>
+        <place>Makkah, Fath-15</place>
     </location>
 
     <location>
@@ -189,8 +189,8 @@
     ]]></explanation>
         <time format="hijri">Prophetic Era</time>
         <image>image.jpg</image>
-        <category>Masjid</category>
-        <place>Madinah</place>
+        <category>Masjid,Historical,Mu'jizat</category>
+        <place>Makkah</place>
     </location>
 
     <location>
@@ -204,7 +204,7 @@
     ]]></explanation>
         <time format="hijri">10 BH</time>
         <image>image.jpg</image>
-        <category>Masjid</category>
+        <category>Masjid,Mu'jizat</category>
         <place>Makkah</place>
     </location>
 
@@ -241,7 +241,7 @@
     <time format="hijri">8 AH – 1433 AH</time>
     <image>masjid_al_rayah.jpg</image>
     <category>Masjid</category>
-    <place>Makkah, Fath-07</place>
+    <place>Makkah, Fath-20</place>
 </location>
 <location>
     <name>Jabal Thawr</name>
@@ -256,11 +256,12 @@
     <time format="hijri">1 AH (Hijrah)</time>
     <image>jabal_thawr.jpg</image>
     <category>Mountain</category>
-    <place>Makkah,Hijra-10</place>
+    <place>Makkah,Hijra-30</place>
 </location>
 
 
 </coordinates>
+
 
 
 
