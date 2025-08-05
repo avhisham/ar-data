@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <coordinates>
     <location>
+    <name>Tuwa Well</name>
+    <latitude>21.43173135351713</latitude>
+    <longitude>39.81664895337286</longitude>
+    <image>zu_tuwa.jpg</image>
+    <category>Well</category>
+    <place>Makkah,Hajj Wida-10,Fath-01</place>
+    <explanation><![CDATA[
+      
+      <p><b>Dhu Tuwa</b> is known as Jarwal or Abar al-Zahir today. the masjid there has been demolished. only the well is there but no water</p><p>The Prophet ﷺ stopped here during the C<b>onquest of Makkah</b>. Marching into Makkah, with 10 000&nbsp; men, they reached Dhu Tuwa. From there, he saw that there was no opposing army in&nbsp; Makkah. He&nbsp; divided the Muslims into battalions and&nbsp;<span style="font-size: 1rem;">stayed overnight</span><span style="font-size: 1rem;">. The next morning, he drank from the well, performed wudhu, and then proceeded to enter Makkah.</span></p><p>Before entering Makkah for the <b>Farewell Hajj</b>, the Prophet ﷺ encamped at here at . He spent the night. On the morning of the 4th of Dhul Hijjah, the Prophet ﷺ performed Fajr neear rthere . He then bathed himself using the water from the Bir Tuwa, which was his usual practice before entering Makkah.</p>
+    
+    ]]></explanation>
+
+    <time></time>
+    
+  </location>
+    
+    
+    <location>
+    <name>Al-Shabeka</name>
+    <latitude>21.422785463508184</latitude>
+    <longitude>39.82133240000814</longitude>
+    <image>image.jpg</image>
+    <category>Cemetery</category>
+    <place>Makkah</place>
+    <explanation><![CDATA[
+      
+      <p>Prior to the advent of Islam some of the pagan Arabs used to practice the jahiliyyah act of burying their daughters alive, believing them to be a sign of disgrace. They are said to have been buried in the Al-Shabeka Graveyard. It’s also reported that Sumayyah (رضي الله عنها) is buried here. She was the first person to be martyred in the cause of Islam.</p><p><br></p><p>Zayd Ibn Amr ibn Nufail was a hanif who passed away before nubuwat of Rasulullah but had met Rasulullah earlier. He would go there trying to prevent these girls from being buried alive. He is said to have saved hundreds of girls</p>
+    
+    ]]></explanation>
+    
+    <time>8H</time>
+    
+  </location>
+
+  <location>
+    <name>Wadi al-Muhassab , Abtah</name>
+    <latitude>21.44152276327369</latitude>
+    <longitude>39.84521526982907</longitude>
+    <image>image.jpg</image>
+    <category>Historical</category>
+    <place>Makkah,Hajj Wida-15</place>
+    <explanation><![CDATA[
+      
+      <p>Referred to as “al-Muhassab,” the area derives its name from the accumulation of stones carried down by water from neighbouring mountains. The name “al-Abtah” signifies a wide area after a valley. It is also named “Khayf Bani Kinanah”, named after one of the tribes that participated in the boycott against Banu Hashim, the Prophet Muhammad’s ﷺ tribe. Today, the area is known as “al-Ma’abdah”.<br><br>During the Farewell Hajj on the 13th of Dhul Hijjah, after leaving Mina, the Prophet ﷺ stayed at Wadi al-Muhassab. It was the same place in which he encamped between the 4th and 8th of Dhul Hijjah, after having completed his Umrah.&nbsp;<br><br>It was also the practice of some of the companions including Abu Bakr, Umar, Uthman, Ali and Abdullah ibn Umar M to alight in al-Muhassab after departing from Mina, where they would observe the prayers and rest for a period of time, as the Prophet ﷺ had done</p>
+    
+    ]]></explanation>
+   
+    <time>560AD</time>
+
+  </location>
+
+    <location>
         <name>Uhud</name>
         <latitude>24.5133</latitude>
         <longitude>39.6011</longitude>
@@ -11,8 +63,8 @@
         <instagram>https://instagram.com/uhud</instagram>
         <tiktok>https://tiktok.com/@uhud</tiktok>
         <facebook>https://facebook.com/uhud</facebook>
-        <category>Perang</category>
-        <place>Medina</place>
+        <category>Battle</category>
+        <place>Madinah</place>
     </location>
 
     <location>
@@ -23,8 +75,8 @@
         <time format="hijri">2 AH</time>
         <image>image.jpg</image>
         <youtube>https://youtube.com/badr</youtube>
-        <category>Battle</category>
-        <place>Outskirts of Medina</place>
+        <category>Battle,</category>
+        <place>Badr Badr-30</place>
     </location>
 
     <location>
@@ -209,6 +261,12 @@
 
 
 </coordinates>
+
+
+
+
+
+
 
 
 
