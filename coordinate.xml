@@ -208,8 +208,6 @@
         <place>Makkah</place>
     </location>
 
-    <!-- Additional locations to follow in next continuation -->
-</coordinates>
 <location>
     <name>Masjid Areesh</name>
     <latitude>23.775216955459424</latitude>
@@ -225,7 +223,6 @@
     <place>Badr, Badr-05</place>
 </location>
 
-<coordinates>
   <location>
     <name>Masjid Rayah ( Original Location )</name>
     <latitude>21.427495575503315</latitude>
