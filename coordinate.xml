@@ -79,22 +79,7 @@
         <place>Badr, Badr-30</place>
     </location>
 
-    <location>
-        <name>Garden2</name>
-        <latitude>3.172408</latitude>
-        <longitude>101.577545</longitude>
-        <explanation><![CDATA[
-            <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
-        ]]></explanation>
-        <time format="gregorian">1640-01-01</time>
-        <image>image.jpg</image>
-        <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
-        <instagram>https://www.instagram.com/example</instagram>
-        <tiktok>https://www.tiktok.com/@example</tiktok>
-        <facebook>https://www.facebook.com/example</facebook>
-        <category>KD</category>
-        <place>Selangor</place>
-    </location>
+    
 
     <location>
         <name>Masjid al Haram</name>
@@ -258,6 +243,7 @@
 
 
 </coordinates>
+
 
 
 
