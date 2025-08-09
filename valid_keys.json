@@ -1,0 +1,7 @@
+{
+  "keys": {
+    "FLUTTER-PRO-2024": {"expiry": "2025-12-31", "max_devices": 1},
+    "EARLY-ACCESS-123": {"expiry": "2025-01-01", "max_devices": 1}
+  },
+  "patterns": ["^[A-Z]{6}-\\d{4}-[A-Z0-9]{3}$"]
+}
