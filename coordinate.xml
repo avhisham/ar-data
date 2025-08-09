@@ -5,6 +5,7 @@
     <latitude>21.43173135351713</latitude>
     <longitude>39.81664895337286</longitude>
     <image>zu_tuwa.jpg</image>
+    <images>zu_tuwa.jpg,image.jpg</images>
     <category>Well</category>
     <place>Makkah,Hajj Wida-10,Fath-10</place>
     <explanation><![CDATA[
@@ -258,6 +259,7 @@
 
 
 </coordinates>
+
 
 
 
