@@ -40,7 +40,7 @@
     <name>Wadi al-Muhassab , Abtah</name>
     <latitude>21.44152276327369</latitude>
     <longitude>39.84521526982907</longitude>
-    <image>image.jpg</image>
+    <image>muhassabthumb.jpg</image>
     <category>Historical</category>
     <place>Makkah,Hajj Wida-15</place>
     <explanation><![CDATA[
@@ -189,7 +189,7 @@
     
     ]]></explanation>
         <time format="hijri">Prophetic Era</time>
-        <image>image.jpg</image>
+        <image>shajarahthumb.jpg</image>
         <category>Masjid,Historical,Mu'jizat</category>
         <place>Makkah</place>
     </location>
@@ -259,6 +259,7 @@
 
 
 </coordinates>
+
 
 
 
