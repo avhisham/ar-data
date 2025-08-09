@@ -23,7 +23,7 @@
     <name>Al-Shabeka</name>
     <latitude>21.422785463508184</latitude>
     <longitude>39.82133240000814</longitude>
-    <image>image.jpg</image>
+    <image>shabekathumb.jpg</image>
     <category>Cemetery</category>
     <place>Makkah</place>
     <explanation><![CDATA[
@@ -59,7 +59,7 @@
         <longitude>39.6011</longitude>
         <explanation><![CDATA[<p>Mount Uhud is the site of the famous Battle of Uhud.</p>]]></explanation>
         <time format="hijri">3 AH</time>
-        <image>image.jpg</image>
+        <image>uhudthumb.jpg</image>
         <youtube>https://youtube.com/uhud</youtube>
         <instagram>https://instagram.com/uhud</instagram>
         <tiktok>https://tiktok.com/@uhud</tiktok>
@@ -74,7 +74,7 @@
         <longitude>38.7906</longitude>
         <explanation><![CDATA[<p>Site of the Battle of Badr.</p>]]></explanation>
         <time format="hijri">2 AH</time>
-        <image>image.jpg</image>
+        <image>badrthumb.jpg</image>
         <youtube>https://youtube.com/badr</youtube>
         <category>Battle</category>
         <place>Badar, Badr-30</place>
@@ -88,7 +88,7 @@
             <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
         ]]></explanation>
         <time format="gregorian">1640-01-01</time>
-        <image>image.jpg</image>
+        <image>badrthumb.jpg</image>
         <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
         <instagram>https://www.instagram.com/example</instagram>
         <tiktok>https://www.tiktok.com/@example</tiktok>
@@ -103,7 +103,7 @@
         <longitude>39.8262</longitude>
         <explanation><![CDATA[<p>The holiest mosque in Islam, located in Makkah, surrounding the Kaaba.</p>]]></explanation>
         <time format="hijri">Pre-Islamic</time>
-        <image>image.jpg</image>
+        <image>haramthumb.jpg</image>
         <category>Masjid</category>
         <place>Makkah</place>
     </location>
@@ -136,7 +136,7 @@
         <longitude>39.8270</longitude>
         <explanation><![CDATA[<p>The valley where the Prophet's clan was boycotted for three years.</p>]]></explanation>
         <time format="hijri">7 BH</time>
-        <image>image.jpg</image>
+        <image>talibthumb.jpg</image>
         <category>Historical</category>
         <place>Makkah</place>
     </location>
@@ -147,7 +147,7 @@
         <longitude>39.8240</longitude>
         <explanation><![CDATA[<p>The first house used for secret da'wah in Makkah.</p>]]></explanation>
         <time format="hijri">Early Islam</time>
-        <image>image.jpg</image>
+        <image>arkamthumb.jpg</image>
         <category>Da'wah,Historical</category>
         <place>Makkah</place>
     </location>
@@ -174,7 +174,7 @@
     ]]></explanation>
     
     <time>640H</time>
-        <image>image.jpg</image>
+        <image>rayahthumb.jpg</image>
         <category>Masjid</category>
         <place>Makkah, Fath-15</place>
     </location>
@@ -204,7 +204,7 @@
     
     ]]></explanation>
         <time format="hijri">10 BH</time>
-        <image>image.jpg</image>
+        <image>jinthumb.jpg</image>
         <category>Masjid,Mu'jizat</category>
         <place>Makkah</place>
     </location>
@@ -259,6 +259,7 @@
 
 
 </coordinates>
+
 
 
 
