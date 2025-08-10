@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Packages>
-  <Package id="P001" name="Makkah Historical Tour" price="1500.00">
+  <Package id="P001" name="Umrah Tour">
     <Description>Explore significant historical and religious sites around Makkah.</Description>
     <TripPlans>
-      <TripPlan day="1">
+      <TripPlan nama="Badr">
+        <LocationRef id="L005" /> <!-- Badr -->
+        <LocationRef id="L016" /> <!-- Masjid Areesh -->
+      </TripPlan>
+      <TripPlan nama="Fath">
         <LocationRef id="L001" /> <!-- Tuwa Well -->
-        <LocationRef id="L002" /> <!-- Al-Shabeka -->
+        <LocationRef id="L013" /> <!-- Masjid Rayah-->
+        <LocationRef id="L017" /> <!-- Masjid Rayah Ori-->
+      </TripPlan>
+      <TripPlan nama="Hajj Wida">
+        <LocationRef id="L001" /> <!-- Tuwa Well -->
         <LocationRef id="L003" /> <!-- Wadi al-Muhassab -->
       </TripPlan>
-      <TripPlan day="2">
-        <LocationRef id="L007" /> <!-- Masjid al Haram -->
-        <LocationRef id="L008" /> <!-- Birthplace of Rasulullah -->
+      <TripPlan nama="Hijra">
         <LocationRef id="L009" /> <!-- House of Khadijah -->
+        <LocationRef id="L012" /> <!-- House of Abu Bakar -->
+        <LocationRef id="L018" /> <!-- Jabal Thawr -->
       </TripPlan>
     </TripPlans>
   </Package>
