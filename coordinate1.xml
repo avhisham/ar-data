@@ -7,7 +7,7 @@
     <image>zu_tuwa.jpg</image>
     <images>zu_tuwa.jpg,image.jpg</images>
     <category>Well</category>
-    <place>Makkah,Hajj Wida-10,Fath-10</place>
+    <place>Makkah</place>
     <explanation><![CDATA[
       <p><b>Dhu Tuwa</b> is known as Jarwal or Abar al-Zahir today. the masjid there has been demolished. only the well is there but no water</p>
       <p>The Prophet ﷺ stopped here during the Conquest of Makkah. Marching into Makkah, with 10,000 men, they reached Dhu Tuwa. From there, he saw that there was no opposing army in Makkah. He divided the Muslims into battalions and stayed overnight. The next morning, he drank from the well, performed wudhu, and then proceeded to enter Makkah.</p>
@@ -36,7 +36,7 @@
     <longitude>39.84521526982907</longitude>
     <image>muhassabthumb.jpg</image>
     <category>Historical</category>
-    <place>Makkah,Hajj Wida-15</place>
+    <place>Makkah</place>
     <explanation><![CDATA[
       <p>Referred to as "al-Muhassab,” the area derives its name from the accumulation of stones carried down by water from neighbouring mountains. The name "al-Abtah” signifies a wide area after a valley. It is also named "Khayf Bani Kinanah”, named after one of the tribes that participated in the boycott against Banu Hashim, the Prophet Muhammad’s ﷺ tribe. Today, the area is known as "al-Ma’abdah”.</p>
       <p>During the Farewell Hajj on the 13th of Dhul Hijjah, after leaving Mina, the Prophet ﷺ stayed at Wadi al-Muhassab. It was the same place in which he encamped between the 4th and 8th of Dhul Hijjah, after having completed his Umrah.</p>
@@ -69,7 +69,7 @@
     <time format="hijri">2 AH</time>
     <youtube>https://youtube.com/badr</youtube>
     <category>Battle</category>
-    <place>Badar, Badr-30</place>
+    <place>Badr</place>
   </location>
 
   <location id="L006">
@@ -119,7 +119,7 @@
     <explanation><![CDATA[<p>The home of Khadijah bint Khuwaylid, where the Prophet Muhammad ? lived after marriage.</p>]]></explanation>
     <time format="hijri">Early Islam</time>
     <category>Historical</category>
-    <place>Makkah, Hijra-10</place>
+    <place>Makkah</place>
   </location>
 
   <location id="L010">
@@ -152,7 +152,7 @@
     <explanation><![CDATA[<p>The home of Abu Bakr as-Siddiq in Makkah.</p>]]></explanation>
     <time format="hijri">Pre-Hijrah</time>
     <category>Sahabi</category>
-    <place>Makkah, Hijra-15</place>
+    <place>Makkah</place>
   </location>
 
   <location id="L013">
@@ -168,7 +168,7 @@
     ]]></explanation>
     <time>640H</time>
     <category>Masjid</category>
-    <place>Makkah, Fath-15</place>
+    <place>Makkah</place>
   </location>
 
   <location id="L014">
@@ -214,7 +214,7 @@
     ]]></explanation>
     <time format="hijri">2 AH (Battle of Badr)</time>
     <category>Masjid</category>
-    <place>Badar, Badr-05</place>
+    <place>Badar</place>
   </location>
 
   <location id="L017">
@@ -230,7 +230,7 @@
     ]]></explanation>
     <time format="hijri">8 AH – 1433 AH</time>
     <category>Masjid</category>
-    <place>Makkah, Fath-20</place>
+    <place>Makkah</place>
   </location>
 
   <location id="L018">
@@ -246,6 +246,6 @@
       ]]></explanation>
       <time format="hijri">1 AH (Hijrah)</time>
       <category>Mountain</category>
-      <place>Makkah,Hijra-30</place>
+      <place>Makkah</place>
   </location>
 </coordinates>
