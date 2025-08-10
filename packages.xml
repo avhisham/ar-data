@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Packages>
+  <Package id="P001" name="Makkah Historical Tour" price="1500.00">
+    <Description>Explore significant historical and religious sites around Makkah.</Description>
+    <TripPlans>
+      <TripPlan day="1">
+        <LocationRef id="L001" /> <!-- Tuwa Well -->
+        <LocationRef id="L002" /> <!-- Al-Shabeka -->
+        <LocationRef id="L003" /> <!-- Wadi al-Muhassab -->
+      </TripPlan>
+      <TripPlan day="2">
+        <LocationRef id="L007" /> <!-- Masjid al Haram -->
+        <LocationRef id="L008" /> <!-- Birthplace of Rasulullah -->
+        <LocationRef id="L009" /> <!-- House of Khadijah -->
+      </TripPlan>
+    </TripPlans>
+  </Package>
+
+  <Package id="P002" name="Islamic Battle Sites" price="1200.00">
+    <Description>Visit famous battle sites of Islamic history.</Description>
+    <TripPlans>
+      <TripPlan day="1">
+        <LocationRef id="L004" /> <!-- Uhud -->
+      </TripPlan>
+      <TripPlan day="2">
+        <LocationRef id="L005" /> <!-- Badr -->
+      </TripPlan>
+      <TripPlan day="3">
+        <LocationRef id="L010" /> <!-- Masjid Areesh (you would add L010 in locations) -->
+      </TripPlan>
+    </TripPlans>
+  </Package>
+
+  <Package id="P003" name="Spiritual Sites of Makkah" price="1300.00">
+    <Description>Visit Masjids and spiritual landmarks in Makkah.</Description>
+    <TripPlans>
+      <TripPlan day="1">
+        <LocationRef id="L011" /> <!-- Masjid Rayah -->
+        <LocationRef id="L012" /> <!-- Masjid Shajarah -->
+        <LocationRef id="L013" /> <!-- Masjid Jin -->
+      </TripPlan>
+      <TripPlan day="2">
+        <LocationRef id="L014" /> <!-- Jabal Thawr -->
+      </TripPlan>
+    </TripPlans>
+  </Package>
+</Packages>
