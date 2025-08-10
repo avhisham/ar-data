@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coordinates>
+  <location id="L001">
+    <name>Tuwa Well</name>
+    <latitude>21.43173135351713</latitude>
+    <longitude>39.81664895337286</longitude>
+    <image>zu_tuwa.jpg</image>
+    <images>zu_tuwa.jpg,image.jpg</images>
+    <category>Well</category>
+    <place>Makkah,Hajj Wida-10,Fath-10</place>
+    <explanation><![CDATA[
+      <p><b>Dhu Tuwa</b> is known as Jarwal or Abar al-Zahir today. the masjid there has been demolished. only the well is there but no water</p>
+      <p>The Prophet ﷺ stopped here during the Conquest of Makkah. Marching into Makkah, with 10,000 men, they reached Dhu Tuwa. From there, he saw that there was no opposing army in Makkah. He divided the Muslims into battalions and stayed overnight. The next morning, he drank from the well, performed wudhu, and then proceeded to enter Makkah.</p>
+      <p>Before entering Makkah for the Farewell Hajj, the Prophet ﷺ encamped here at . He spent the night. On the morning of the 4th of Dhul Hijjah, the Prophet ﷺ performed Fajr near there. He then bathed himself using the water from the Bir Tuwa, which was his usual practice before entering Makkah.</p>
+    ]]></explanation>
+    <time></time>
+  </location>
+
+  <location id="L002">
+    <name>Al-Shabeka</name>
+    <latitude>21.422785463508184</latitude>
+    <longitude>39.82133240000814</longitude>
+    <image>shabekathumb.jpg</image>
+    <category>Cemetery</category>
+    <place>Makkah</place>
+    <explanation><![CDATA[
+      <p>Prior to the advent of Islam some of the pagan Arabs used to practice the jahiliyyah act of burying their daughters alive, believing them to be a sign of disgrace. They are said to have been buried in the Al-Shabeka Graveyard. It’s also reported that Sumayyah (رضي الله عنها) is buried here. She was the first person to be martyred in the cause of Islam.</p>
+      <p>Zayd Ibn Amr ibn Nufail was a hanif who passed away before nubuwat of Rasulullah but had met Rasulullah earlier. He would go there trying to prevent these girls from being buried alive. He is said to have saved hundreds of girls</p>
+    ]]></explanation>
+    <time>8H</time>
+  </location>
+
+  <location id="L003">
+    <name>Wadi al-Muhassab , Abtah</name>
+    <latitude>21.44152276327369</latitude>
+    <longitude>39.84521526982907</longitude>
+    <image>muhassabthumb.jpg</image>
+    <category>Historical</category>
+    <place>Makkah,Hajj Wida-15</place>
+    <explanation><![CDATA[
+      <p>Referred to as "al-Muhassab,” the area derives its name from the accumulation of stones carried down by water from neighbouring mountains. The name "al-Abtah” signifies a wide area after a valley. It is also named "Khayf Bani Kinanah”, named after one of the tribes that participated in the boycott against Banu Hashim, the Prophet Muhammad’s ﷺ tribe. Today, the area is known as "al-Ma’abdah”.</p>
+      <p>During the Farewell Hajj on the 13th of Dhul Hijjah, after leaving Mina, the Prophet ﷺ stayed at Wadi al-Muhassab. It was the same place in which he encamped between the 4th and 8th of Dhul Hijjah, after having completed his Umrah.</p>
+      <p>It was also the practice of some of the companions including Abu Bakr, Umar, Uthman, Ali and Abdullah ibn Umar M to alight in al-Muhassab after departing from Mina, where they would observe the prayers and rest for a period of time, as the Prophet ﷺ had done</p>
+    ]]></explanation>
+    <time>560AD</time>
+  </location>
+
+  <location id="L004">
+    <name>Uhud</name>
+    <latitude>24.5133</latitude>
+    <longitude>39.6011</longitude>
+    <image>uhudthumb.jpg</image>
+    <explanation><![CDATA[<p>Mount Uhud is the site of the famous Battle of Uhud.</p>]]></explanation>
+    <time format="hijri">3 AH</time>
+    <youtube>https://youtube.com/uhud</youtube>
+    <instagram>https://instagram.com/uhud</instagram>
+    <tiktok>https://tiktok.com/@uhud</tiktok>
+    <facebook>https://facebook.com/uhud</facebook>
+    <category>Battle</category>
+    <place>Madinah</place>
+  </location>
+
+  <location id="L005">
+    <name>Badr</name>
+    <latitude>23.7825</latitude>
+    <longitude>38.7906</longitude>
+    <image>badrthumb.jpg</image>
+    <explanation><![CDATA[<p>Site of the Battle of Badr.</p>]]></explanation>
+    <time format="hijri">2 AH</time>
+    <youtube>https://youtube.com/badr</youtube>
+    <category>Battle</category>
+    <place>Badar, Badr-30</place>
+  </location>
+
+  <location id="L006">
+    <name>Garden2</name>
+    <latitude>3.172408</latitude>
+    <longitude>101.577545</longitude>
+    <image>badrthumb.jpg</image>
+    <explanation><![CDATA[
+      <p>This garden was an important site in the <strong>17th century</strong> where scholars gathered to discuss various sciences. It is now a historical park.</p>
+    ]]></explanation>
+    <time format="gregorian">1640-01-01</time>
+    <youtube>https://www.youtube.com/watch?v=EXAMPLE</youtube>
+    <instagram>https://www.instagram.com/example</instagram>
+    <tiktok>https://www.tiktok.com/@example</tiktok>
+    <facebook>https://www.facebook.com/example</facebook>
+    <category>KD</category>
+    <place>Selangor</place>
+  </location>
+
+  <location id="L007">
+    <name>Masjid al Haram</name>
+    <latitude>21.4225</latitude>
+    <longitude>39.8262</longitude>
+    <image>haramthumb.jpg</image>
+    <explanation><![CDATA[<p>The holiest mosque in Islam, located in Makkah, surrounding the Kaaba.</p>]]></explanation>
+    <time format="hijri">Pre-Islamic</time>
+    <category>Masjid</category>
+    <place>Makkah</place>
+  </location>
+
+  <location id="L008">
+    <name>Birthplace of Rasulullah</name>
+    <latitude>21.4248682</latitude>
+    <longitude>39.8299649</longitude>
+    <image>house_rasulullah_makkah.jpg</image>
+    <explanation><![CDATA[<p>Believed to be the house where Prophet Muhammad ? was born in the Year of the Elephant.</p>]]></explanation>
+    <time format="hijri">~53 BH</time>
+    <category>Historical</category>
+    <place>Makkah</place>
+  </location>
+
+  <location id="L009">
+    <name>House of Khadijah</name>
+    <latitude>21.424822283734688</latitude>
+    <longitude>39.82809477588735</longitude>
+    <image>house_khadijah.jpg</image>
+    <explanation><![CDATA[<p>The home of Khadijah bint Khuwaylid, where the Prophet Muhammad ? lived after marriage.</p>]]></explanation>
+    <time format="hijri">Early Islam</time>
+    <category>Historical</category>
+    <place>Makkah, Hijra-10</place>
+  </location>
+
+  <location id="L010">
+    <name>Shi'ib Abu Talib</name>
+    <latitude>21.4260</latitude>
+    <longitude>39.8270</longitude>
+    <image>talibthumb.jpg</image>
+    <explanation><![CDATA[<p>The valley where the Prophet's clan was boycotted for three years.</p>]]></explanation>
+    <time format="hijri">7 BH</time>
+    <category>Historical</category>
+    <place>Makkah</place>
+  </location>
+
+  <location id="L011">
+    <name>Darul Arqam</name>
+    <latitude>21.4234</latitude>
+    <longitude>39.8240</longitude>
+    <image>arkamthumb.jpg</image>
+    <explanation><![CDATA[<p>The first house used for secret da'wah in Makkah.</p>]]></explanation>
+    <time format="hijri">Early Islam</time>
+    <category>Da'wah,Historical</category>
+    <place>Makkah</place>
+  </location>
+
+  <location id="L012">
+    <name>House of Abu Bakar</name>
+    <latitude>21.42031145857695</latitude>
+    <longitude>39.82389770177451</longitude>
+    <image>house_abu_bakr_makkah.jpg</image>
+    <explanation><![CDATA[<p>The home of Abu Bakr as-Siddiq in Makkah.</p>]]></explanation>
+    <time format="hijri">Pre-Hijrah</time>
+    <category>Sahabi</category>
+    <place>Makkah, Hijra-15</place>
+  </location>
+
+  <location id="L013">
+    <name>Masjid Rayah</name>
+    <latitude>21.431589772371627</latitude>
+    <longitude>39.82922479903408</longitude>
+    <image>rayahthumb.jpg</image>
+    <explanation><![CDATA[
+      <p><b>The Masjid al-Rayah</b> (مسجد الراية), from Arabic "Mosque of the Banner", referring to the war banner of Prophet Muhammad at the Conquest of Mecca (فتح مكة), is a small masjid in the Shi'b 'Aamir (Valley of 'Aamir).</p>
+      <p>It is located in the as-Sulaymaniyyah district east of the Masjid al-Shajarah.</p>
+      <p>Prophet Muhammad entered the city of Makkah on the day of the Fatah Makkah from here.</p>
+      <p>The masjid was first built by Abdullah bin Abbas bin Ali bin Abdullah bin Abbas, and later rebuilt by Abbasiah Khalifah al-Mu'atasim circa year 1243 CE (640H.)</p>
+    ]]></explanation>
+    <time>640H</time>
+    <category>Masjid</category>
+    <place>Makkah, Fath-15</place>
+  </location>
+
+  <location id="L014">
+    <name>Masjid Shajarah</name>
+    <latitude>21.431987001735102</latitude>
+    <longitude>39.82845287951872</longitude>
+    <image>shajarahthumb.jpg</image>
+    <explanation><![CDATA[
+      <p><b>The Masjid Shajarah </b>(مسجد الشجرة) meaning the "masjid of the tree" is located in the in Shi'b Aamir (Valley of'Aamir), it marks the place where the "miracle of the tree" is believed to have happened. Now the mosque is also called the Masjid al-Jandrawi (مسجد الجندراوي).</p>
+      <p>As per record, the masjid is located at the foot of the mountain opposite Al-Hajun near the Masjid Al-Jin, at the entrance to the Al-Ma’ala cemetery from the Gaza side.</p>
+      <p>Hadis narrates a miracle of prophet Muhammad. When he was asked to show a miracle by mushriks, he called a tree, which walked towards him, and declared the prophethood and then went back.</p>
+      <p>Another hadis relates on how when the Prophet feeling dejected and asked Allah for a sign. He was then asked to summon a nearby tree which tore the roots through the ground towards him, offered salam and returned. The Prophet then said, "I now have no concern for the people's rejection."</p>
+    ]]></explanation>
+    <time format="hijri">Prophetic Era</time>
+    <category>Masjid,Historical,Mu'jizat</category>
+    <place>Makkah</place>
+  </location>
+
+  <location id="L015">
+    <name>Masjid Jin</name>
+    <latitude>21.433451440458626</latitude>
+    <longitude>39.82893473919095</longitude>
+    <image>jinthumb.jpg</image>
+    <explanation><![CDATA[
+      <p><b>The Masjid al-Jinn</b> (مسجد الجنّ) is located near Jannat al-Mu'alla. It is also known as the Masjid of Allegiance (مسجد بِيعات, Masjid Biy‘āt) and the Masjid of Guards (مسجد الحرس, Masjid al-Ḥaras) as the city guards would patrol up to that point.</p>
+      <p>This is the site where a group of jinn gathered one night to hear the recitation of the Quran by prophet Muhammad. They then accepted Islam and they bay'ah (oath of allegiance) to him. This is mentioned in Surah al-Jinn in the Quran.</p>
+      <p>It is also one of the oldest masjid in Makkah.</p>
+    ]]></explanation>
+    <time format="hijri">10 BH</time>
+    <category>Masjid,Mu'jizat</category>
+    <place>Makkah</place>
+  </location>
+
+  <location id="L016">
+    <name>Masjid Areesh</name>
+    <latitude>23.775216955459424</latitude>
+    <longitude>38.79340811991341</longitude>
+    <image>masjid_areesh.jpg</image>
+    <explanation><![CDATA[
+      <p>Masjid Areesh is built on the site where the tent of the Prophet (ﷺ) was pitched during the Battle of Badr. It served as the headquarters from which the Prophet (ﷺ) directed the battle.</p>
+      <p>On the suggestion of Sa‘d bin Mu‘adh (رضي الله عنه), a shelter was constructed from palm branches, guarded mainly by the Ansar under his leadership. The Prophet (ﷺ) remained inside, supplicating intensely for hours for Allah’s victory, saying: "O Allah, if this small group of believers is destroyed, You will not be worshipped on earth as You deserve. O Allah, grant us victory now.”</p>
+      <p>Abu Bakr (رضي الله عنه) stood guard with his sword drawn, protecting the Prophet (ﷺ) while he prayed.</p>
+    ]]></explanation>
+    <time format="hijri">2 AH (Battle of Badr)</time>
+    <category>Masjid</category>
+    <place>Badar, Badr-05</place>
+  </location>
+
+  <location id="L017">
+    <name>Masjid Rayah ( Original Location )</name>
+    <latitude>21.427495575503315</latitude>
+    <longitude>39.82866097492205</longitude>
+    <image>masjid_al_rayah.jpg</image>
+    <explanation><![CDATA[
+      <p><strong>Masjid al-Rayah</strong> (Arabic: مسجد الراية), also known as <strong>Masjid al-Jowdariyyah</strong> (Arabic: مسجد الجودرية), marked the site where the Prophet ﷺ erected a banner during the Conquest of Makkah in Ramadan 8 AH (January 630 CE). It was demolished in 2012 (1433 AH) during the northern courtyard expansion of Masjid al-Haram.</p>
+      <p>Al-Zubayr ibn al-Awwam (رضي الله عنه) was entrusted with the Muslim banner and instructed to plant it at al-Hajun, the upper part of Makkah. Historians such as al-Tabari and al-Azraqi describe it as a mosque near the well of Jubayr ibn Mut‘im, where the Prophet ﷺ prayed. Symbolically, banners in battle represented morale and resilience, and the role of the standard-bearer carried great weight.</p>
+      <p>The masjid was first built by Ubayd Allah ibn al-Abbas and later reconstructed by the Abbasid Caliph Al-Musta’sim (640 AH / 1242 CE), Emir Qutlabak (801 AH / 1398 CE), and Sultan Mehmed III (1000 AH / 1591 CE). Modern renovations took place in 1379 AH (1959 CE) and 1394 AH (1974 CE), after which it was renamed King Fahd Mosque before demolition in 2012.</p>
+      <p>The Jowdariyyah neighbourhood and the historic well of Jubayr ibn Mut‘im, originally dug by Qusayy bin Kilab, were also removed during the expansion, marking the disappearance of one of Makkah’s oldest neighbourhoods.</p>
+    ]]></explanation>
+    <time format="hijri">8 AH – 1433 AH</time>
+    <category>Masjid</category>
+    <place>Makkah, Fath-20</place>
+  </location>
+
+  <location id="L018">
+      <name>Jabal Thawr</name>
+      <latitude>21.37921631704461</latitude>
+      <longitude>39.849257375532886</longitude>
+      <image>jabal_thawr.jpg</image>
+      <explanation><![CDATA[
+          <p><strong>Jabal Thawr</strong> (Arabic: جَبَل ثَوْر) is a mountain south of Makkah, notable for the cave of <strong>Ghār Thawr</strong> where the Prophet ﷺ and Abu Bakr (رضي الله عنه) hid for three days during the Hijrah to Madinah.</p>
+          <p>Upon arrival, Abu Bakr (رضي الله عنه) entered first to clear the cave and block holes with cloth. The Prophet ﷺ slept on his lap, and when Abu Bakr (رضي الله عنه) was stung, he endured the pain silently until the Prophet ﷺ healed it with his spittle.</p>
+          <p>They remained hidden while Abu Bakr’s (رضي الله عنه) son Abdullah brought news each night, and Amir bin Fuhayra (رضي الله عنه) grazed goats nearby to provide milk and cover tracks. Allah (ﷻ) sent a spider to weave a web and doves to nest at the entrance, deterring the Quraysh search party.</p>
+          <p>The Prophet ﷺ reassured Abu Bakr (رضي الله عنه): "How can you fear for two when the third is Allah?” [Qur'an 9:40]. After three days, Asma (رضي الله عنها) brought provisions, tying them with her torn waistband, earning the title "She of the two waistband.” They then departed towards Madinah.</p>
+      ]]></explanation>
+      <time format="hijri">1 AH (Hijrah)</time>
+      <category>Mountain</category>
+      <place>Makkah,Hijra-30</place>
+  </location>
+</coordinates>
