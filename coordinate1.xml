@@ -1,10 +1,3 @@
-To add a "country" element to your XML file, you need to add `<country>...</country>` within each `<location>` tag. This ensures that each location is correctly associated with its country.
-
-Here is the updated XML code with the "country" element added to all locations.
-
-### **Updated XML File**
-
-```xml
 <?xml version="1.0" encoding="utf-8"?>
 <coordinates>
   <location id="L001">
