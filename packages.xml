@@ -5,7 +5,16 @@
     <country>Saudi Arabia,Malaysia</country>
     <TripPlans>
       <TripPlan nama="Badr">
-        <LocationRef id="L005" /> <LocationRef id="L016" /> </TripPlan>
+        <LocationRef id="L005" > 
+          <Details>
+            Bring along camera
+          </Details>
+          <Postdetails>
+            Leaving at 10am stanby in lobby
+          </Postdetails>
+        </LocationRef>
+        <LocationRef id="L016" /> 
+      </TripPlan>
       <TripPlan nama="Fath">
         <LocationRef id="L001" /> <LocationRef id="L013" /> <LocationRef id="L017" /> </TripPlan>
       <TripPlan nama="Hajj Wida">
