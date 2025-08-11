@@ -2,7 +2,7 @@
 <Packages>
   <Package id="P001" name="Umrah Tour">
     <Description>Explore significant historical and religious sites around Makkah.</Description>
-    <country>Saudi Arabia</country>
+    <country>Saudi Arabia,Malaysia</country>
     <TripPlans>
       <TripPlan nama="Badr">
         <LocationRef id="L005" /> <LocationRef id="L016" /> </TripPlan>
