@@ -2,54 +2,40 @@
 <Packages>
   <Package id="P001" name="Umrah Tour">
     <Description>Explore significant historical and religious sites around Makkah.</Description>
+    <country>Saudi Arabia</country>
     <TripPlans>
       <TripPlan nama="Badr">
-        <LocationRef id="L005" /> <!-- Badr -->
-        <LocationRef id="L016" /> <!-- Masjid Areesh -->
-      </TripPlan>
+        <LocationRef id="L005" /> <LocationRef id="L016" /> </TripPlan>
       <TripPlan nama="Fath">
-        <LocationRef id="L001" /> <!-- Tuwa Well -->
-        <LocationRef id="L013" /> <!-- Masjid Rayah-->
-        <LocationRef id="L017" /> <!-- Masjid Rayah Ori-->
-      </TripPlan>
+        <LocationRef id="L001" /> <LocationRef id="L013" /> <LocationRef id="L017" /> </TripPlan>
       <TripPlan nama="Hajj Wida">
-        <LocationRef id="L001" /> <!-- Tuwa Well -->
-        <LocationRef id="L003" /> <!-- Wadi al-Muhassab -->
-      </TripPlan>
+        <LocationRef id="L001" /> <LocationRef id="L003" /> </TripPlan>
       <TripPlan nama="Hijra">
-        <LocationRef id="L009" /> <!-- House of Khadijah -->
-        <LocationRef id="L012" /> <!-- House of Abu Bakar -->
-        <LocationRef id="L018" /> <!-- Jabal Thawr -->
-      </TripPlan>
+        <LocationRef id="L009" /> <LocationRef id="L012" /> <LocationRef id="L018" /> </TripPlan>
     </TripPlans>
   </Package>
 
   <Package id="P002" name="Islamic Battle Sites" price="1200.00">
     <Description>Visit famous battle sites of Islamic history.</Description>
+    <country>Saudi Arabia</country>
     <TripPlans>
       <TripPlan nama="Day 1">
-        <LocationRef id="L004" /> <!-- Uhud -->
-      </TripPlan>
+        <LocationRef id="L004" /> </TripPlan>
       <TripPlan nama="Day 2">
-        <LocationRef id="L005" /> <!-- Badr -->
-      </TripPlan>
+        <LocationRef id="L005" /> </TripPlan>
       <TripPlan nama="Day 3">
-        <LocationRef id="L010" /> <!-- Masjid Areesh (you would add L010 in locations) -->
-      </TripPlan>
+        <LocationRef id="L010" /> </TripPlan>
     </TripPlans>
   </Package>
 
   <Package id="P003" name="Spiritual Sites of Makkah" price="1300.00">
     <Description>Visit Masjids and spiritual landmarks in Makkah.</Description>
+    <country>Saudi Arabia</country>
     <TripPlans>
       <TripPlan nama="Day 1">
-        <LocationRef id="L011" /> <!-- Masjid Rayah -->
-        <LocationRef id="L012" /> <!-- Masjid Shajarah -->
-        <LocationRef id="L013" /> <!-- Masjid Jin -->
-      </TripPlan>
+        <LocationRef id="L011" /> <LocationRef id="L012" /> <LocationRef id="L013" /> </TripPlan>
       <TripPlan nama="Day 2">
-        <LocationRef id="L014" /> <!-- Jabal Thawr -->
-      </TripPlan>
+        <LocationRef id="L014" /> </TripPlan>
     </TripPlans>
   </Package>
 </Packages>
